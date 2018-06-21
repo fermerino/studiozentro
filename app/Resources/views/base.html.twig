@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+    <title>{% block title %}Restaulandia - Restaurante para niños en Madrid{% endblock %}</title>
+    <meta property="title" content="Restaurante para niños en Madrid">
+
+    <meta property="description" content="El restaurante para los niños en Madrid. Animación infantil, comida sana, zona para los padres y un montón de diversión ¡Ven a visitarnos!">
+    <meta name="description" content="{% block descripcion %}El restaurante para los niños en Madrid. Animación infantil, comida sana, zona para los padres y un montón de diversión ¡Ven a visitarnos!{% endblock %}">
+    <meta name="keywords" content="Restaulandia, restaurante, planes con niños, planes con niños madrid, planes niños, restaurante celiacos, diversion niños, niños madrid, restaurante con niños, planes familia, restaurante familia, plan familiar, comida celiacos, niños celiacos">
+    <meta name="author" content="Cowabi LTD">
+
+    {% block javascripts %}
+        <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <!-- Custom Theme files -->
+        <!--theme-style-->
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
+        <!--//theme-style-->
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <!---->
+        <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Open+Sans" rel="stylesheet">
+        <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+        <!-- start-smoth-scrolling -->
+        <script type="text/javascript" src="{{ asset('js/move-top.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/easing.js') }}"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event){
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+                });
+            });
+        </script>
+        <!-- start-smoth-scrolling -->
+        <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/component.css') }}" />
+        <!-- animation-effect -->
+        <link href="{{ asset('css/animate.min.css') }}" rel="stylesheet">
+        <script src="{{ asset('js/wow.min.js') }}"></script>
+        <link rel="stylesheet" href="{{ asset('font-awesome/css/font-awesome.min.css') }}">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+        <script>
+            new WOW().init();
+        </script>
+        <!-- //animation-effect -->
+    {% endblock %}
+
+    {% block cookies %}
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+        <script>
+            window.addEventListener("load", function(){
+                window.cookieconsent.initialise({
+                    "palette": {
+                        "popup": {
+                            "background": "#216942",
+                            "text": "#b2d192"
+                        },
+                        "button": {
+                            "background": "#afed71"
+                        }
+                    },
+                    "theme": "edgeless",
+                    "content": {
+                        "message": "Restaulandia utiliza cookies para asegurarse una mejor experiencia de usuario",
+                        "dismiss": "Entendido!",
+                        "link": "Saber más"
+                    }
+                })});
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96652678-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-96652678-1');
+        </script>
+
+    {% endblock %}
+
+    {% block extra %}
+    {% endblock %}
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body class="body">
+
+    <div class="{% block header %} header-basica{% endblock %}">
+        {% block topnav %}
+            {% include ':restaulandia:topnav.html.twig' %}
+        {% endblock %}
+
+        {% block slider %}
+
+        {% endblock %}
+    </div>
+
+    {% block content %}
+
+    {% endblock %}
+
+</body>
+
+{% block footer %}
+    {% include ':restaulandia:footernav.html.twig' %}
+{% endblock %}
+
+</body>
+</html>

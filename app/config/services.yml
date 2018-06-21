@@ -1,0 +1,16 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/service_container.html
+parameters:
+    #parameter_name: value
+
+services:
+    #Para añadir un listener de mantenimient
+    #mantenimiento_listener:
+    #    class: AppBundle\Event\MantenimientoListener
+    #    tags:
+    #        - {name: kernel.event_listener, event: kernel.request, method: onKernelRequest}
+    #Para poder usar truncate en twigs
+    twig.extension.text:
+        class: Twig_Extensions_Extension_Text
+        tags:
+           - { name: twig.extension }

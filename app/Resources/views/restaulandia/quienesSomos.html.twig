@@ -1,0 +1,163 @@
+{% extends ':restaulandia:base.html.twig' %}
+
+{% block content %}
+    <div class="content-top-top">
+        <div class="container">
+            <div class="content-top">
+                <div class="col-md-12 content-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <h3>
+                        <span class="rojo">¿Qué</span>
+                        <span class="celeste">es</span>
+                        <span class="amarillo">Restaulandia?</span>
+                    </h3>
+                </div>
+                <div class="clearfix"> </div><br>
+                <div class="col-md-12 content-right animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <p class="letra-carta mb-4">
+                        Nos presentamos. Somos Chus y Rubén. Cansados de no poder llevar a nuestros hijos a comer fuera de casa sin que se aburriesen y disfrutaran de la comida, y a su vez poder disfrutar nosotros, se nos ocurrió esta idea que os presentamos. Una pequeña locura pero decidimos emprender este proyecto.
+                    </p>
+                    <p class="letra-carta mb-4">
+                        Es algo novedoso y diferente de lo que existe actualmente. Aquí son los padres los que acompañan a los niños a comer y no paran de reír y divertirse en toda la comida y sobremesa.
+                    </p>
+                    <p class="letra-carta mb-4">
+                        Te dejamos una nota de prensa y varios audios que hablan sobre nosotros en las principales emisoras de radio para que puedas comprobarlo y si te apetece venir a conocernos.
+                    </p>
+                    <div class="clearfix"> </div><br>
+
+                    <div class="col-12 content-right animated wow fadeInRight mt-4" data-wow-duration="1500ms" data-wow-delay="700ms">
+                        <a href="{{ asset('np_restaulandia.pdf') }}" class="btn btn-default center-block" role="button" title="Nota de prensa Restaulandia" target="_blank">
+                            <i class="fa fa-file-pdf-o"></i> Ver nota Prensa PDF</a>
+                    </div>
+
+                    <div class="clearfix"> </div><br><br>
+
+                    <div class="col-12 content-left animated wow fadeInLeft mt-sm-2" data-wow-duration="1500ms" data-wow-delay="1200ms">
+                        <img src="{{ asset('images/cope.png') }}" class="mr-4" title="Nota de prensa en la cadena Cope de Restaulandia">
+                        <audio controls class="ml-3" title="Nota de prensa en la cadena Cope de Restaulandia">
+                            <source src="{{ asset('restaulandia_en_la_cope.mp3') }}" type="audio/mp3">
+                            Tu navegador no soporta este tipo de reproducción de audio.
+                        </audio>
+                    </div>
+
+                    <div class="clearfix"> </div><br><br>
+
+                    <div class="col-12 content-right animated wow fadeInRight mt-4" data-wow-duration="1500ms" data-wow-delay="700ms">
+
+                        <a href="http://cadenaser.com/emisora/2014/09/15/audios/1410742586_660215.html" class="btn btn-default center-block" role="button" title="Nota de prensa Restaulandia" target="_blank">
+                            <img src="{{ asset('images/ser.png') }}" class="mr-4" title="Nota de prensa en la cadena SER de Restaulandia"> Escuchar audio en la Cadena SER</a>
+                    </div>
+
+                    <div class="clearfix"> </div><br><br>
+
+                    <div class="col-12 content-left animated wow fadeInLeft mt-sm-2" data-wow-duration="1500ms" data-wow-delay="1200ms">
+                        <img src="{{ asset('images/rne.png') }}" class="mr-4" title="Nota de prensa en la RNE sobre Restaulandia">
+                        <audio controls class="ml-3" title="Nota de prensa en RNE de Restaulandia">
+                            <source src="{{ asset('restaulandia_rne.mp3') }}" type="audio/mp3">
+                            Tu navegador no soporta este tipo de reproducción de audio.
+                        </audio>
+                    </div>
+
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--services-->
+    <div class="services">
+        <div class="container">
+            <div class="services-top">
+                <div class="col-md-12 animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <h2 class="amarillo sombra kid-font2">REPERCUSIÓN DE RESTAULANDIA EN INTERNET.</h2>
+
+                    <div class="clearfix"> </div><br><br>
+
+                    <div class="col-md-6 content-right animated wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="700ms">
+                        <div class="card">
+                            <div class="card-block mencion">
+                            <a href="http://www.juntines.com/calle/restaurantes/mediterraneos/restaulandia--comida-y-animacion-infantil_4857_u.html" target="_blank">
+                                <img class="center-block" src="{{ asset('images/sponsor/juntines.png') }}" alt="Mención Juntines" title="Mención Juntines">
+                            </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 content-left animated wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="1800ms">
+                        <div class="card">
+                            <div class="card-block mencion">
+                            <a href="http://pequenosmonztruos.es/2014/06/18/para-no-perderse-nada-del-fin-de-semana-del-19-al-22-de-junio/" target="_blank">
+                                <img class="center-block" src="{{ asset('images/sponsor/monztruos.png') }}" alt="Mención Pequeños monstruos" title="Mención Pequeños monstruos">
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 content-right animated wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="700ms">
+                        <div class="card">
+                            <div class="card-block mencion">
+                                <a href="http://coachintegralservices.blogspot.com.es/2014/09/restaulandia-primer-restaurante-de-ninos.html" target="_blank">
+                                    <img class="center-block" src="{{ asset('images/sponsor/coach.png') }}" alt="Mención Busco Coach" title="Mención Coach">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 content-left animated wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="300ms">
+                        <div class="card">
+                            <div class="card-block mencion">
+                                <a href="http://www.buscorestaurantes.com/restaurante/Restaulandia-145091-0" target="_blank">
+                                    <img class="center-block" src="{{ asset('images/sponsor/buscorestaurantes.png') }}" alt="Mención Busco Restaurante" title="Mención BuscoRestaurante">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 content-right animated wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="400ms">
+                        <div class="card">
+                            <div class="card-block mencion">
+                                <a href="http://www.chiquimadrid.es/restaurantes-para-ninos/restaurante-para-ninos-restaulandia" target="_blank">
+                                    <img class="center-block" src="{{ asset('images/sponsor/chiquimadrid.png') }}" alt="Mención Chiqui Madrid" title="Mención Chiki Madrid">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 content-left animated wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="1900ms">
+                        <div class="card">
+                            <div class="card-block mencion">
+                                <a href="http://www.conmuchagula.com/2014/09/25/restaulandia-un-restaurante-infantil-con-animacion-donde-tambien-comen-los-padres/" target="_blank">
+                                    <img class="center-block" src="{{ asset('images/sponsor/gula.png') }}" alt="Mención Gula" title="Mención Gula">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 content-right animated wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="900ms">
+                        <div class="card">
+                            <div class="card-block mencion">
+                                <a href="http://www.saposyprincesas.com/actividad/espana/restaurantes-en-familia/restaurantes-con-ninos-2/restaulandia/" target="_blank">
+                                    <img class="center-block" src="{{ asset('images/sponsor/saposprincesas.png') }}" alt="Mención Sapos y princesas" title="Mención Sapos y Princesas">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 content-left animated wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="1200ms">
+                        <div class="card">
+                            <div class="card-block mencion">
+                                <a href="http://www.guiadelocio.com/madrid/restaurantes/madrid/restaulandia" target="_blank">
+                                    <img class="center-block" src="{{ asset('images/sponsor/guiaocio.png') }}" alt="Mención guía del ocio" title="Mención Guía del ocio">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,83 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: security.yml }
+    - { resource: services.yml }
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+parameters:
+    locale: es
+    httpprotocol: https
+
+framework:
+    #esi:             ~
+    translator:      { fallbacks: ["%locale%"] }
+    secret:          "%secret%"
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    #serializer:      { enable_annotations: true }
+    templating:
+        engines: ['twig']
+    default_locale:  "%locale%"
+    trusted_hosts:   ~
+    session:
+        # http://symfony.com/doc/current/reference/configuration/framework.html#handler-id
+        cookie_lifetime: 2700 #Para que a los 45 mins les saque de la sesion
+        handler_id:  session.handler.native_file
+        save_path:   "%kernel.root_dir%/../var/sessions/%kernel.environment%"
+    fragments:       ~
+    http_method_override: true
+    assets: ~
+    php_errors:
+        log: true
+
+# Twig Configuration
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
+    form_themes:
+      - bootstrap_3_layout.html.twig
+    number_format:
+        decimals: 2
+        decimal_point: ','
+        thousands_separator: '.'
+    date:
+        format: d/m/Y H:i:s
+        interval_format: '%%d days'
+        timezone: Europe/Paris
+
+liip_imagine:
+    resolvers:
+        default:
+            web_path: ~
+    filter_sets:
+        cache: ~
+        # the name of the "filter set"
+        my_thumb:
+            # adjust the image quality to 75%
+            quality: 60
+            # list of transformations to apply (the "filters")
+            filters:
+                # create a thumbnail: set size to 120x90 and use the "outbound" mode
+                # to crop the image when the size ratio of the input differs
+                thumbnail: { size : [250, 250], mode : inset }
+                # create a 2px black border: center the thumbnail on a black background
+                # 4px larger to create a 2px border around the final image
+                background: { size : [250, 250], position : center, color : '#ffffff' }
+        mini:
+            quality: 50
+            filters:
+                thumbnail: { size : [60, 45], mode : inset }
+                background: { size : [60, 45], position : center, color : '#ffffff' }
+
+# Swiftmailer Configuration
+swiftmailer:
+    transport: "%mailer_transport%"
+    host:      "%mailer_host%"
+    username:  "%mailer_user%"
+    password:  "%mailer_password%"
+    spool:     { type: memory }

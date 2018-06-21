@@ -1,0 +1,239 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+label {
+    font-weight: 700;
+}
+h1, h2, h3{
+    font-weight: 800;
+}
+.tabla-head{
+    background-color: #141f3d;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.help-block{
+    color: indianred;
+}
+
+#simulador, #configurador{
+    height: 900px;
+}
+
+.margen-simulador{
+    margin-top: 80px;
+}
+
+.simulador-parte{
+    position: absolute;
+    top:200px;
+    left: 130px;
+}
+
+.text-inactivo{
+    color: darkgray;
+}
+
+.tabla-factura{
+    display: none;
+}
+
+.div-form-ancho{
+    /*border-bottom: solid 1px #eee;*/
+    border-left: solid 2px #3498db;
+    background: #fafafa;
+
+    padding: 15px 5px 15px 5px;
+
+    -webkit-box-shadow: inset -42px 42px 98px 11px rgba(255,255,255,1);
+    -moz-box-shadow: inset -42px 42px 98px 11px rgba(255,255,255,1);
+    box-shadow: inset -42px 42px 98px 11px rgba(255,255,255,1);
+}
+
+.lista-cool { margin-top: -40px; margin-left: 25px;  margin-right: -25px;}
+.lista-cool ol { font-style:italic; font-family:Georgia, Times, serif; font-size:36px;font-weight: 800;}
+.lista-cool ol li { color: #65A608; }
+.lista-cool ol li p { padding:8px; font-style:normal; font-size:22px; border-left: 1px solid #999; color:#4e4e4e; font-weight: normal;}
+.lista-cool ol li p em { display:block; }
+
+.btn-warning{
+    background: #292b2c;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+}
+
+h3.card-header{
+    height: 62px;
+}
+
+.btn-warning:hover {
+    background: #4b4d4e;
+}
+
+.btn-warning:focus{
+    background: #e24f43;
+    box-shadow: none;
+}
+
+.div-simulador{
+    height: 350px;
+    display: none;
+}
+
+.table-sm{
+    border: none;
+}
+
+.boton-mini { transition: all .2s ease-in-out; }
+.boton-mini:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.boton-cerrar{
+    right: -12px;
+    /*top: -28px;*/
+    position: relative;
+}
+
+/*Radiobuttons para aparecer/desaparecer carro*/
+label.btn span {
+    font-size: 1.5em ;
+}
+
+label input[type="radio"] ~ i.fa.fa-circle-o{
+    color: #c8c8c8;    display: inline;
+}
+label input[type="radio"] ~ i.fa.fa-dot-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o{
+    color: #7AA3CC;    display: inline;
+}
+label:hover input[type="radio"] ~ i.fa {
+    color: #7AA3CC;
+}
+
+label input[type="checkbox"] ~ i.fa.fa-square-o{
+    color: #c8c8c8;    display: inline;
+}
+label input[type="checkbox"] ~ i.fa.fa-check-square-o{
+    display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-square-o{
+    display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o{
+    color: #7AA3CC;    display: inline;
+}
+label:hover input[type="checkbox"] ~ i.fa {
+    color: #7AA3CC;
+}
+
+div[data-toggle="buttons"] label.active{
+    color: #7AA3CC;
+}
+
+div[data-toggle="buttons"] label {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 2em;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: top;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0px solid
+    #c8c8c8;
+    border-radius: 3px;
+    color: #c8c8c8;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+div[data-toggle="buttons"] label:hover {
+    color: #7AA3CC;
+}
+
+div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.custom-form{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+
+/* Estilos para los multiselects */
+div > #carro_form_categoria, div > #categoria_form_prenda {
+    border: solid 1px #3598db;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.checklist-group .checkbox {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.checklist-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.zoom-textura {
+    position: relative;
+
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    overflow: hidden;
+    width: 106%;
+    margin-top: 35px;
+    margin-left: -20px;
+    margin-right: 31px;
+}
+
+.zoom-textura img{
+    max-width: 100%;
+
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 160px;
+    width: 100%;
+}
+.zoom-textura:hover img{
+    -moz-transform: scale(5);
+    -webkit-transform: scale(5);
+    transform: scale(5);
+}
+
+.desactivo{
+    display: none;
+}
+
+.activo{
+    display: block;
+}
+.modal-body {
+    background-color: rgba(239, 240, 245, 0.38);
+}

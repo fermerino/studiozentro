@@ -1,0 +1,207 @@
+{% extends ':restaulandia:base.html.twig' %}
+
+{% block header %} header {% endblock %}
+
+{% block slider %}
+    {% include ':restaulandia:slider.html.twig' %}
+{% endblock %}
+
+{% block content %}
+    <!--content-->
+    <div class="content" id="content-down">
+        <div class="content-top-top">
+            <div class="container">
+                <div class="content-top">
+                    <div class="col-md-4 content-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+                        <h3 class="rojo">Restaurante</h3>
+                        <label><i class="glyphicon glyphicon-menu-up"></i></label>
+                        <span class="kid-font">Come como en casa</span>
+                        <img src="{{ asset('images/chico-feliz.png') }}" title="Ven y sonríe" alt="Niño feliz en restaurante">
+                    </div>
+                    <div class="col-md-8 content-right animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+                        <p>En Restaulandia hemos desterrado la comida rápida. Queremos que comas bien y que invites a tus padres a comer contigo un menú sano y delicioso.</p>
+                        <p><b>Un restaurante para ir con niños en Madrid con menús muy especiales.</b></p>
+                        <p>Pero no solo vienes a comer,  vienes a divertirte. Tu restaurante te ofrece una amplia programación con animadores, actuaciones en directo, música en la minidisco y talleres para dar rienda suelta a tu creatividad y llevarte a casa tus creaciones. Y si necesitas que preparemos grandes eventos cómo: comuniones, celebraciones familiares, cumpleaños, catering y fiestas a domicilio, tienes que llamarnos.</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="content-mid">
+
+                    <div class="col-md-4 food-grid animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+                        <div class=" hover-fold">
+                            <h4>Ensaladas</h4>
+                            <div class="top">
+                                <div class="front face"></div>
+                                <div class="back face">
+                                    <p>Elige entre una amplia variedad de entrantes y ensaladas.</p>
+                                </div>
+                            </div>
+                            <div class="bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 food-grid animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+                        <div class=" hover-fold">
+                            <h4>Principales</h4>
+                            <div class="top">
+                                <div class="front face front1"></div>
+                                <div class="back face">
+                                    <p>Carnes, pescados, cocidos... come sano y despreocupate.</p>
+                                </div>
+                            </div>
+                            <div class="bottom bottom1"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 food-grid animated wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
+                        <div class=" hover-fold">
+                            <h4>Delicioso</h4>
+                            <div class="top">
+                                <div class="front face front2"></div>
+                                <div class="back face">
+                                    <p>Disfruta de nuestros platos y diviertete. ¡No te arrepentirás!</p>
+                                </div>
+                            </div>
+                            <div class="bottom bottom2"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!--services-->
+        <div class="services">
+            <div class="container">
+                <div class="services-top">
+                    <div class="col-md-8 services-right animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+                        <p>No dudes en venir a Restaulandia si quieres algún evento a tu medida y a la de tus amigos. Reservamos nuestro espacio para cualquier celebración que se te ocurra. Animadores, menús especiales, castillos hinchables… y un montón de posibilidades para que no tengas que preocuparte por nada y tu celebración sea un éxito.</p>
+                        <p>¡Recuerda! también puedes venir con los mayores. Los tendremos entretenidos para poder jugar y divertirnos a lo grande.
+                            Cuéntanos qué necesitas y nosotros lo organizamos por ti.
+                        </p>
+                        </div>
+                    <div class="col-md-4 services-left animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+                        <h3 class="amarillo">Eventos a medida</h3>
+                        <label><i class="glyphicon glyphicon-menu-up"></i></label>
+                        <span class="kid-font">¡Haz tus deseos realidad!</span>
+
+                        <img class="gorro2" src="{{ asset('images/gorro2.png') }}" title="Eventos personalizados" alt="Eventos personalizados en el restaulandia">
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="service-top">
+                    <div class="service-bottom animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+                        <div class=" service-bottom1">
+                            <div class=" ser-bottom">
+                                <img src="{{ asset('images/restaulandia/haloween-mini.jpg') }}" class="img-responsive" alt="">
+                            </div>
+                            <div class="ser-top ">
+                                <h5>Haloween</h5>
+                                <p>Todos los eventos especiales de las fechas más señaladas del año. Disfrázate con tus amigos y deja que tus padres se relajen cenando tranquilamente.</p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class=" service-bottom1">
+                            <div class=" ser-bottom">
+                                <img src="{{ asset('images/restaulandia/gatita.jpg') }}" class="img-responsive" alt="">
+                            </div>
+                            <div class="ser-top ">
+                                <h5>Carnavales</h5>
+                                <p>Los carnavales en Restaulandia son especiales! Trae tus mejor disfraz y pásatelo chahi.</p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class=" service-bottom1">
+                            <div class=" ser-bottom">
+                                <img src="{{ asset('images/restaulandia/duendes.jpg') }}" class="img-responsive" alt="">
+                            </div>
+                            <div class="ser-top ">
+                                <h5>Personalizado</h5>
+                                <p>Salir a comer fuera con tus hijos nunca será lo mismo cuando nos conozcas. Animación, juegos, bailes, cuentos, magia para tus hijos. No dejes que te lo cuenten y ven en persona a Restaulandia con tus hijos!</p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                    </div>
+
+                    <img class="payasos" src="{{ asset('images/payaso.png') }}" title="payasos" alt="Animadores payasos en el restaurante">
+                </div>
+            </div>
+        </div>
+        <!--//services-->
+        <!--news-->
+        <div class="content-top-top">
+            <div class="container">
+                <div class="content-top">
+                    <div class="col-md-4 content-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+                        <h3 class="celeste">TRAE A TUS Papás</h3>
+                        <label><i class="glyphicon glyphicon-menu-up"></i></label>
+                        <span class="kid-font">En restaulandia los peques traen a sus papás</span>
+                    </div>
+                    <div class="col-md-8 content-right animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+                        <p>Invita a tus padres o familiares a comer y verás qué bien lo pasan.</p>
+                        <p>Hemos reservado una zona de bar para que los mayores puedan relajarse mientras los niños se divierten tranquilos y disfrutan de las actividades sin preocuparse de sus acompañantes.</p>
+                        <p>Los animadores también se pueden ocupar de tus padres o familiares si se empeñan en participar en las actividades y disfrutar como niños.</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+
+                <div class="news-bottom">
+                    <div class="news-bot">
+                        <div class="col-md-6 news-bottom1 animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+                            <div class="content-item">
+                                <div class="overlay"></div>
+                                <div class=" news-bottom2">
+                                    <ul class="grid-news">
+                                        <li><span><i class="glyphicon glyphicon-calendar"> </i>10.11.2017</span><b>/</b></li>
+                                        <li><span><i class="glyphicon glyphicon-comment"> </i>5 Comentarios</span><b>/</b></li>
+                                    </ul>
+                                    <p>Bailarás, reirás y lo pasarás a tope con nuestros juegos y canciones.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 news-bottom1 animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+                            <div class="content-item content-item1">
+                                <div class="overlay"></div>
+                                <div class=" news-bottom2">
+                                    <ul class="grid-news">
+                                        <li><span><i class="glyphicon glyphicon-calendar"> </i>11.11.2017</span><b>/</b></li>
+                                        <li><span><i class="glyphicon glyphicon-comment"> </i>7 Comentarios</span><b>/</b></li>
+                                    </ul>
+                                    <p>Tus padres también pueden participar en los juegos. Si se atreven :).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="news-bot">
+                        <div class="col-md-6 news-bottom1">
+                            <div class="content-item content-item2 animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+                                <div class="overlay"></div>
+                                <div class=" news-bottom2">
+                                    <ul class="grid-news">
+                                        <li><span><i class="glyphicon glyphicon-calendar"> </i>15.12.2017</span><b>/</b></li>
+                                        <li><span><i class="glyphicon glyphicon-comment"> </i>2 Comentarios</span><b>/</b></li>
+                                    </ul>
+                                    <p>Juega y haz amigos mientras tus padres se lo pasan también en grande.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 news-bottom1 animated wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
+                            <div class="content-item content-item3">
+                                <div class="overlay"></div>
+                                <div class=" news-bottom2">
+                                    <ul class="grid-news">
+                                        <li><span><i class="glyphicon glyphicon-calendar"> </i>25.04.2017</span><b>/</b></li>
+                                        <li><span><i class="glyphicon glyphicon-comment"> </i>8 Comentarios</span><b>/</b></li>
+                                    </ul>
+                                    <p>Diviertete este fin de semana de fiesta y diversión en Restaulandia con tus hijos. Reserva rápidamente en el 606 341 802</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--//news-->
+    </div>
+
+{% endblock %}

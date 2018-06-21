@@ -1,0 +1,105 @@
+{% extends ':restaulandia:base.html.twig' %}
+
+{% block content %}
+    <div class="content-top-top">
+        <div class="container">
+            <div class="content-top">
+                <div class="col-md-3 content-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <h3 class="rojo">Menú adulto</h3>
+                    <label><i class="glyphicon glyphicon-menu-up"></i></label>
+                    <span class="kid-font">Incluye pan, consumición y postre de la casa.</span>
+                    <br>
+                    <span class="kid-font">P.V.P: 20 €</span>
+                </div>
+                <div class="col-md-4 content-right animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <h3 class="celeste letra-fashion">Primer plato</h3>
+                    <ul class="letra-carta">
+                        <li>CREMA DE CALABAZA CRUJIENTE Y PIPAS TOSTADAS</li>
+                        <li>RISOTTO DE BOLETUS Y GAMBAS</li>
+                        <li>ENSALADA DE QUESO DE CABRA CON SU CEBOLLA CRUJIENTE, TOMATES CONFITADOS Y VINAGRETA FRANCESA</li>
+                        <li>WOK DE VERDURAS Y POLLO</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 content-right animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <h3 class="amarillo letra-fashion">Segundo plato</h3>
+                    <ul class="letra-carta">
+                        <li>SOLOMILLO DE TERNERA CON SUS PATATAS Y PADRÓN</li>
+                        <li>HAMBURGUESA GOURMET CON PAN NEGRO DE TRUFA Y PATATAS GAJO (200GR CARNE PICADA VACA, RÚCULA, CEBOLLA CARAMELIZADA, BACON, QUESO CHEDGAR)</li>
+                        <li>DORADA A LA PLANCHA CON CRUJIENTE DE JAMÓN Y AJOS FRITOS</li>
+                        <li>MUSKA GRIEGA CASERA</li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="content-mid">
+                <div class="col-md-4 food-grid animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <div class=" hover-fold">
+                        <h4>Ensaladas</h4>
+                        <div class="top">
+                            <div class="front face"></div>
+                            <div class="back face">
+                                <p>Elige entre una amplia variedad de entrantes y ensaladas.</p>
+                            </div>
+                        </div>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-grid animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <div class=" hover-fold">
+                        <h4>Principales</h4>
+                        <div class="top">
+                            <div class="front face front1"></div>
+                            <div class="back face">
+                                <p>Carnes, pescados, cocidos... come sano y despreocupate.</p>
+                            </div>
+                        </div>
+                        <div class="bottom bottom1"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 food-grid animated wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <div class=" hover-fold">
+                        <h4>Delicioso</h4>
+                        <div class="top">
+                            <div class="front face front2"></div>
+                            <div class="back face">
+                                <p>Disfruta de nuestros platos y diviertete. ¡No te arrepentirás!</p>
+                            </div>
+                        </div>
+                        <div class="bottom bottom2"></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--services-->
+    <div class="services">
+        <div class="container">
+            <div class="services-top">
+                <div class="col-md-8 services-right animated wow fadeInDownBig" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <h3 class="combinados">¡¡¡ Super combinados Restaulandia !!!</h3>
+                    <ol class="letra-carta">
+                        <li>ARROZ A LA CUBANA CON CINTA DE LOMO EMPANADA</li>
+                        <li>HAMBURGUESA RESTAULANDIA CON PATATAS FRITAS</li>
+                        <li>MACARRONES BOLOGNESA CON NUGETS DE POLLO</li>
+                    </ol>
+                </div>
+                <div class="col-md-4 services-left animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <h3 class="amarillo">Menú infantil</h3>
+                    <label><i class="glyphicon glyphicon-menu-up"></i></label>
+                    <span class="kid-font">P.V.P. 15 €</span>
+
+                    <img class="gorro2"
+                         src="{{ asset('images/gorro2.png') }}" title="Eventos personalizados" alt="Eventos personalizados en el restaulandia">
+                </div>
+                <div class="clearfix"> </div>
+                <div class="clearfix"> </div>
+
+                <div class="col-md-12 services-right animated wow fadeInDownBig" data-wow-duration="1000ms" data-wow-delay="1500ms">-
+                    <h3 class="kid-font">LOS NIÑOS QUE NO COMAN EN EL RESTAURANTE Y DISFRUTEN DE LA ANIMACIÓN, TENDRÁN UN COSTE DE 8 €.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

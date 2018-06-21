@@ -1,0 +1,63 @@
+# Incluir en /etc/hosts: 127.0.0.1  oc.local
+# mkdir ~/NAS  //para crear NAS en la Home del usuario
+# sudo setfacl -R -m u:www-data:rwx -m u:`whoami`:rwx var/cache var/logs
+# sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx var/cache var/logs
+# chmod 600 ./docker/ssh/id_rsa
+# .gitignore: docker/apache/log/*  docker/php/log/*
+
+version: '2'
+services:
+
+#  oc-apache:
+#    container_name: oc-apache
+#    image: sgadpsf/apache-2.4.10:latest
+#    ports:
+#      - "127.0.0.1:82:80"
+#      - "127.0.0.1:443:443"
+#    links:
+#      - oc-php:php
+#    volumes:
+#      - .:/var/www/html/:rw
+#      - ./docker/apache/log:/var/log/apache2:rw
+#      - ./docker/apache/vhost:/etc/apache2/sites-available:rw
+#
+#    environment:
+#        - VIRTUALHOST=oc.local
+#        - http_proxy=http://proxy.mpt.es:8080
+#        - https_proxy=http://proxy.mpt.es:8080
+#        - no_proxy=.dev.map.es,.local,.redsara.es,.mpt.es,.map.es,.administracionelectronica.gob.es,.gob.es,.seap.minhap.es
+#  oc-php:
+#    container_name: oc-php715
+#    image: fmerinol/php715-fpm:1.2
+#    volumes:
+#      - .:/var/www/html/:rw
+#      - ./docker/php/log/php7-fpm:/var/log/php7-fpm:rw
+#      - /home/$USER/NAS/oc:/NAS/oc:rw
+#      - ./docker/ssh/:/var/www/.ssh
+#      - ./docker/php/conf/30-custom.ini:/usr/local/etc/php/conf.d/30-custom.ini
+#      - /usr/lib/php5/20121212/:/usr/local/lib/php/extensions/no-debug-non-zts-20160303/
+#    environment:
+#      - http_proxy=http://proxy.mpt.es:8080
+#      - https_proxy=http://proxy.mpt.es:8080
+#      - no_proxy=.dev.map.es,.local,.redsara.es,.mpt.es,.map.es,.administracionelectronica.gob.es,.gob.es,.seap.minhap.es
+#    dns:
+#      - 10.1.35.7
+#      - 10.1.53.1
+#      - 10.1.53.2
+  oc-mysql:
+    container_name: oc-mysql
+    restart: always
+    image: mysql:5.7
+    ports:
+      - "127.0.0.1:3311:3306"
+    volumes:
+      - .:/var/www/html/:rw
+      - ./docker/mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=oc
+    command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci]
+#networks:
+#    default:
+#      external:
+#        name: sgadpsf

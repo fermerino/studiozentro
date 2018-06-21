@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>¿Cómo funciona el simulador de Original Circle?</h1>
+
+    <div class="row row-centered mt-5 ml-5">
+        <div class="col-md-9 col-sm-12 mt-3 col-centered lista-cool">
+            <ol class="list-group">
+                <li><p>Haga click sobre el botón de empezar.</p></li>
+                <li><p>Seleccione la pieza de su carrito.</p></li>
+                <li><p>Configure los colores de su vestidura seleccionando cada parte dentro del configurador.
+                    Solicite a una dependienta el muestrario de texturas para contrastarlas con el simulador.</p></li>
+                <li><p>Revise en la pestaña de detalles la configuración elegida.</p></li>
+                <li><p>Introduzca su email o nombre y confirme la vestidura personalizada.</p></li>
+                <li><p>Personalizaremos su vestidura tal cual la ha elegido y se lo enviaremos a casa</p></li>
+            </ol>
+            <a href="{{ path('selector_carros') }}"class="btn btn-warning btn-lg">¡Empezar! <i class="fa fa-chevron-right"></i> </a>
+        </div>
+    </div><!--/.row-->
+{% endblock %}
