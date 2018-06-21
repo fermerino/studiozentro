@@ -15,7 +15,7 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render(':restaulandia:home.html.twig', [
+        return $this->render(':custom:home.html.twig', [
         ]);
     }
 
@@ -28,11 +28,11 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/carta", name="carta")
+     * @Route("/encimeras", name="encimeras")
      */
     public function cartaAction(Request $request)
     {
-        return $this->render(':restaulandia:carta.html.twig');
+        return $this->render(':custom:carta.html.twig');
     }
 
     /**
@@ -40,20 +40,21 @@ class DefaultController extends Controller
      */
     public function promocionesAction(Request $request)
     {
-        return $this->render(':restaulandia:promociones.html.twig');
+        return $this->render(':custom:promociones.html.twig');
     }
 
     /**
-     * @Route("/galeria/{tipo}", name="galeria")
+     * @Route("/mesas-y-sillas", name="mesas_sillas")
      * @param Request $request
      * @param $tipo
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function galeriaAction(Request $request, $tipo)
+    public function galeriaAction(Request $request)
     {
 
+        $tipo = "infantil";
         if (!in_array($tipo, ['infantil', 'platos'])) {
-            return $this->render(':restaulandia:videos.html.twig');
+            return $this->render(':custom:videos.html.twig');
         }
 
         $directorio = "images/$tipo";
@@ -71,23 +72,31 @@ class DefaultController extends Controller
 
         krsort($imagenes);
 
-        return $this->render(':restaulandia:galeria.html.twig', ['imagenes' => $imagenes, 'tipo' => $tipo]);
+        return $this->render(':custom:galeria.html.twig', ['imagenes' => $imagenes, 'tipo' => $tipo]);
     }
 
     /**
-     * @Route("/quienes-somos", name="quienesSomos")
+     * @Route("/electrodomesticos", name="electrodomesticos")
      */
     public function quienesSomosAction(Request $request)
     {
-        return $this->render(':restaulandia:quienesSomos.html.twig');
+        return $this->render(':custom:quienesSomos.html.twig');
     }
 
     /**
-     * @Route("/reserva", name="reserva")
+     * @Route("/reformas", name="reformas")
      */
     public function reservaAction(Request $request)
     {
-        return $this->render(':restaulandia:reserva.html.twig');
+        return $this->render(':custom:reserva.html.twig');
+    }
+
+    /**
+     * @Route("/presupuestos", name="presupuestos")
+     */
+    public function presupuestosAction(Request $request)
+    {
+        return $this->render(':custom:reserva.html.twig');
     }
 //
 //    /**
