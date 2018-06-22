@@ -168,7 +168,7 @@ i.glyphicon.glyphicon-menu-hamburger {
 }
 
 .header-basica{
-    background-color: #005238;
+    background-color: #232222;
     width:100%;
     background-size:cover;
     min-height:60px;
@@ -529,7 +529,7 @@ ul.grid-news li b {
 }
 /*--footer--*/
 .footer {
-    background-color: #005238;
+    background-color: #232222;
     padding: 6em 0;
 }
 ul.in li {

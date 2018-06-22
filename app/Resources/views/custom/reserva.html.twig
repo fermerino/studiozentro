@@ -1,0 +1,47 @@
+{% extends ':custom:base.html.twig' %}
+
+{% block content %}
+    <div class="content-top-top">
+        <div class="container">
+            <div class="content-top">
+                <div class="col-md-12 content-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <h3 class="rojo">Puedes Reservar a través de ElTenedor.es ...</h3>
+                </div>
+                <div class="clearfix"> </div><br>
+                <div class="col-md-12 content-right animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <div class="col-md-12 content-right animated wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="700ms">
+                        <iframe src="https://module.lafourchette.com/es_ES/cta/iframe/276529-1c465" frameborder="0" allowtransparency="true"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--services-->
+    <div class="services">
+        <div class="container">
+            <div class="services-top">
+                <div class="col-md-12 content-left animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <h3 class="amarillo sombra">... o mediante contacto directo con nosotros</h3>
+                </div>
+
+                <div class="col-md-4 content-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <img src="{{ asset('images/chico-feliz.png') }}" title="Os esperamos" alt="Os esperamos">
+                    <h3 class="rojo">¡Os esperamos!</h3>
+                    <span class="kid-font2">PUEDES RESERVAR CUALQUIER DÍA DE LA SEMANA</span>
+                </div>
+                <div class="col-md-8 content-right animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <div class="clearfix"> </div>
+                    <ul class="letra-carta blanco mt-4">
+                        <li>Dirección: C\ Manuel Tovar 25</li>
+                        <li>Teléfono: +34 606 34 18 02</li>
+                        <li>Email: reservas@restaulandia.com</li>
+                        <li>Horario: Sábados, Domingos y festivos de 13:30 - 17:30</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
