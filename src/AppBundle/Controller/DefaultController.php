@@ -44,20 +44,14 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/mesas-y-sillas", name="mesas_sillas")
+     * @Route("/galeria/{recurso}", name="galeria")
      * @param Request $request
-     * @param $tipo
+     * @param $recurso
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function galeriaAction(Request $request)
+    public function galeriaAction(Request $request, $recurso = "cocinas")
     {
-
-        $tipo = "infantil";
-        if (!in_array($tipo, ['infantil', 'platos'])) {
-            return $this->render(':custom:videos.html.twig');
-        }
-
-        $directorio = "images/$tipo";
+        $directorio = "images/$recurso";
         $gestor_dir = opendir($directorio);
         while (false !== ($nombre_fichero = readdir($gestor_dir))) {
             if ($nombre_fichero === '.' || $nombre_fichero === "..") continue;
@@ -65,14 +59,14 @@ class DefaultController extends Controller
                 filectime(pathinfo($nombre_fichero, PATHINFO_DIRNAME)) =>
                     [
                         'nombre'   => ucwords(pathinfo($nombre_fichero, PATHINFO_FILENAME)),
-                        'fichero'  => "images/$tipo/$nombre_fichero"
+                        'fichero'  => "images/$recurso/$nombre_fichero"
                     ]
                 ];
         }
 
         krsort($imagenes);
 
-        return $this->render(':custom:galeria.html.twig', ['imagenes' => $imagenes, 'tipo' => $tipo]);
+        return $this->render(':custom:galeria.html.twig', ['imagenes' => $imagenes, 'tipo' => $recurso]);
     }
 
     /**

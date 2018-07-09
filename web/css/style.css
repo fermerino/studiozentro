@@ -211,7 +211,7 @@ i.glyphicon.glyphicon-menu-hamburger {
 }
 /*--content--*/
 .hover-fold {
-  background:#005238;
+  background: rgba(183,183,183,1);
   height: 300px;
   margin: 0px auto;
   -moz-perspective: 1500;
@@ -263,13 +263,13 @@ i.glyphicon.glyphicon-menu-hamburger {
   transform: rotateX(-180deg);
 }
 .hover-fold .front {
-  background: url(../images/restaulandia/ensaladas.jpg) top;
+  background: url(../images/studiozentro/cocina.jpg) top;
   height: 100%;
   /*has to be 100% of .top */
   width: 100%;
 }
 .hover-fold .back {
-  background: #005238;
+  background: rgba(183,183,183,1);
   height: 100%;
   /*has to be 100% of .top */
   padding: 0 40px;
@@ -286,7 +286,7 @@ i.glyphicon.glyphicon-menu-hamburger {
   line-height:2em;
 }
 .hover-fold .bottom {
-  background: url(../images/restaulandia/ensaladas.jpg) bottom;
+  background: url(../images/studiozentro/cocina.jpg) bottom;
   height: 50%;
   position: absolute;
   top: 50%;
@@ -294,16 +294,16 @@ i.glyphicon.glyphicon-menu-hamburger {
   z-index: 0;
 }
 .hover-fold .front1 {
-  background: url(../images/restaulandia/pescado.jpg) top;
+  background: url(../images/studiozentro/nevera.jpg) top;
 }
 .hover-fold .bottom1{
-  background: url(../images/restaulandia/pescado.jpg) bottom;
+  background: url(../images/studiozentro/nevera.jpg) bottom;
 }
 .hover-fold .front2 {
-  background: url(../images/restaulandia/sano.jpg) top;
+  background: url(../images/studiozentro/reforma.jpg) top;
 }
 .hover-fold .bottom2{
-  background: url(../images/restaulandia/sano.jpg) bottom;
+  background: url(../images/studiozentro/reforma.jpg) bottom;
 }
 /*--content--*/
 .content-top-top {
@@ -484,7 +484,6 @@ ul.grid-news li b {
 }
 /*--conent--*/
 .content-item {
-  background: url(../images/restaulandia/baile.jpg) no-repeat;
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -492,16 +491,6 @@ ul.grid-news li b {
   overflow: hidden;
   position: relative;
   z-index: 9999;
-}
-.content-item1 {
-  background: url(../images/restaulandia/baile2.jpg) no-repeat;
-}
-.content-item2 {
-  background: url(../images/restaulandia/fila.jpg) no-repeat;
-    z-index: 0;
-}
-.content-item3 {
-  background: url(../images/restaulandia/marco-dino.jpg) no-repeat;
 }
 .content-item .overlay {
   border-bottom: 100px solid #cc6427;
@@ -2088,4 +2077,18 @@ span.label {
 td.add-check a {
     width: 86px;
 }
+}
+
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: fixed;
+    top: 0px;
+    background-color: #232322 !important;
+    width: 100% !important;
+    z-index: 300;
+}
+.logo-home {
+    margin-bottom: 1em;
+    margin-left: 33%;
 }
