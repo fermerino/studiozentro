@@ -1,5 +1,9 @@
+@font-face {
+    font-family: Gotham;
+    src: url(../fonts/Gotham-Light.woff) format("woff");
+}
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: Gotham;
 }
 
 label {
@@ -236,4 +240,7 @@ div > #carro_form_categoria, div > #categoria_form_prenda {
 }
 .modal-body {
     background-color: rgba(239, 240, 245, 0.38);
+}
+.hover-fold {
+    font-family: Gotham;
 }

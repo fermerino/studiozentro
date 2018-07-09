@@ -3,9 +3,13 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+@font-face {
+    font-family: Gotham;
+    src: url(../fonts/Gotham-Light.woff) format("woff");
+}
 body{
 	background:#fff;	
-	font-family: 'Open Sans', sans-serif;
+	font-family: Gotham;
 }
 body a{
 	transition: 0.5s all;
@@ -18,16 +22,17 @@ body p{
     text-align: justify;
 }
 .kid-font{
-    font-family: 'Amatic SC', bolder;
+    font-family: Gotham, bolder;
     font-weight: 800;
 }
 .kid-font2{
-    font-family: 'Amatic SC', bolder;
+    font-family: Gotham, bolder;
     font-weight: 800;
     font-size: 45px;
 }
 .banner p{
     text-align: center;
+    font-family: Gotham;
 }
 .rojo {
     color: red !important;
@@ -50,7 +55,7 @@ body p{
 .letra-fashion{
     font-size: 3em;
     /* color: #005238; */
-    font-family: 'Gochi Hand', cursive;
+    font-family: Gotham, cursive;
     font-weight: 700;
     text-shadow: 4px 1px 6px rgb(0, 0, 0);
 }
@@ -109,7 +114,7 @@ iframe{
     font-size: 3em;
     color: cyan;
     text-shadow: 4px 4px 5px rgb(0, 0, 0);
-    font-family: 'Gochi Hand', cursive;
+    font-family: Gotham, cursive;
     font-weight: 700;
     margin-bottom: 15px;
 }
@@ -120,7 +125,7 @@ iframe{
     border: 2px solid;
     box-shadow: 4px 4px 5px  rgb(0, 0, 0);
     font-weight: 700;
-    font-family: 'Gochi Hand', cursive;
+    font-family: Gotham, cursive;
     font-size: 2em;
 }
 .btn-default :hover{
@@ -137,7 +142,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 	float:left;
 }
 .logo h1  {
-	font-family: 'Gochi Hand', cursive;
+	font-family: Gotham, cursive;
     font-size: 4em;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -192,7 +197,7 @@ i.glyphicon.glyphicon-menu-hamburger {
     width: 50%;
     margin: 0 auto;
     font-weight: 700;
-    font-family: 'Amatic SC', bold;
+    font-family: Gotham, bold;
 }
 .banner p {
     font-size: 1.2em;
@@ -226,7 +231,7 @@ i.glyphicon.glyphicon-menu-hamburger {
   padding: 3em 0 0.7em;
   color:#fff;
   font-size:2em;
-  font-family: 'Gochi Hand', cursive;
+  font-family: Gotham, cursive;
 }
 .hover-fold .top {
   height: 50%;
@@ -315,7 +320,7 @@ i.glyphicon.glyphicon-menu-hamburger {
 .content-left h3{
 	font-size:3em;
 	/*color: #005238;*/
-   font-family: 'Gochi Hand', cursive;
+   font-family: Gotham, cursive;
    font-weight:700;
     text-shadow: 4px 1px 6px rgb(0, 0, 0);
 }
@@ -357,7 +362,7 @@ i.glyphicon.glyphicon-menu-hamburger {
 	font-size:3em;
 	/*color: #005238;*/
     text-shadow: 4px 4px 5px rgb(0, 0, 0);
-   font-family: 'Gochi Hand', cursive;
+   font-family: Gotham, cursive;
    font-weight:700;
 }
 .services-left span{
@@ -415,7 +420,7 @@ i.glyphicon.glyphicon-menu-hamburger {
 .ser-top h5 {
     color: #005238;
     font-size: 2em;
-	font-family: 'Gochi Hand', cursive;
+	font-family: Gotham, cursive;
 	font-weight: 700;
 }
 .ser-top p {
@@ -478,7 +483,7 @@ ul.grid-news li b {
 .news-bottom2 p{
    font-size:1.5em;
    color:#fff;
-       font-family: 'Gochi Hand', cursive;
+       font-family: Gotham, cursive;
     font-weight: 700;
     text-shadow: 4px 4px 5px rgb(0, 0, 0);
 }
@@ -535,9 +540,9 @@ ul.in li a:hover {
     color: #97824b;
 }
 .footer-top span{
-	font-size: 1.7em;
+	font-size: 1em;
     color: #fff;
-    font-family: Patrick Hand;
+    font-family: Gotham;
     /*border-top: 2px solid #fff;*/
     width: 90%;
     display: block;
@@ -565,7 +570,7 @@ p.footer-class a:hover{
 .footer-bottom h2{
 	font-size: 2em;
     color: #fff;
-	font-family: 'Gochi Hand', cursive;
+	font-family: Gotham, cursive;
     font-weight: 700;
     line-height: 1em;
 }
@@ -647,7 +652,7 @@ p.footer-class a:hover{
 .events-left h3{
 	font-size:3em;
 	color: #005238;
-   font-family: 'Gochi Hand', cursive;
+   font-family: Gotham, cursive;
    font-weight:700;
 }
 .events-left span{
@@ -686,7 +691,7 @@ p.footer-class a:hover{
 .events-bottom2 h3{
     font-size: 2em; 
     color: #005238;
-    font-family: 'Gochi Hand', cursive;
+    font-family: Gotham, cursive;
     font-weight: 700;	
 }
 .events-bottom2 label {
@@ -744,7 +749,7 @@ p.footer-class a:hover{
     font-weight: 700;
     font-size: 1.4em;
     color: #97824b;
-    font-family: 'Gochi Hand', cursive;
+    font-family: Gotham, cursive;
 }
 p.your-para{
 	color:#8d8d8d;
@@ -821,7 +826,7 @@ p.msg-para{
     font-weight: 700;
     font-size: 1.4em;
     color: #97824b;
-    font-family: 'Gochi Hand', cursive;
+    font-family: Gotham, cursive;
 	    margin: 1em 0 0.2em;
 }
 .address p {
@@ -841,7 +846,7 @@ p.msg-para{
 .blog-grid h3{
 	font-size: 1.3em;
 	text-transform: uppercase;
-	font-family: 'Gochi Hand', cursive;
+	font-family: Gotham, cursive;
     font-weight: 700;
 }
 .blog-grid h3 a{
@@ -907,7 +912,7 @@ i.glyphicon.glyphicon-comment {
 	color: #005238;
     font-size: 1.2em;
     text-decoration: none;
-    font-family: 'Gochi Hand', cursive;
+    font-family: Gotham, cursive;
     font-weight: 700;
 	overflow: hidden;
 	padding: 0px 0 3px;
@@ -977,7 +982,7 @@ i.glyphicon.glyphicon-comment {
     font-size: 1.5em;
     padding-top: 0.8em;
     color: #005238;
-    font-family: 'Gochi Hand', cursive;
+    font-family: Gotham, cursive;
     font-weight: 700;
 }
 .lone-line p {
@@ -1019,7 +1024,7 @@ ul.grid-blog {
 .comment h3{
 	font-size: 2.5em;
     color: #97824B;
-    font-family: 'Gochi Hand', cursive;
+    font-family: Gotham, cursive;
     font-weight: 700;
 }
 .media-body p {
@@ -1034,7 +1039,7 @@ ul.grid-blog {
 .leave h3{
 	    font-size: 2.5em;
     color: #97824B;
-    font-family: 'Gochi Hand', cursive;
+    font-family: Gotham, cursive;
     font-weight: 700;
 }
 .single-grid input[type="text"],.single-grid textarea{
@@ -1134,7 +1139,7 @@ p.reply a i{
 /*----*/
 .search-in h4,.grid-categories h4,.blog-bottom h4{
 	color: #005238;
-    font-family: 'Gochi Hand', cursive;
+    font-family: Gotham, cursive;
     font-weight: 700;
 	font-size:2em;
 }
@@ -1192,7 +1197,7 @@ a.elit{
 	font-size: 1em;
     color: #97824B;
     text-decoration: none;
-    font-family: 'Gochi Hand', cursive;
+    font-family: Gotham, cursive;
     font-weight: 700;
 }
 a.elit:hover{
@@ -1242,7 +1247,7 @@ ul.start li span{
 .menu-left h3{
 	font-size:3em;
 	color: #005238;
-   font-family: 'Gochi Hand', cursive;
+   font-family: Gotham, cursive;
    font-weight:700;
 }
 .menu-left span{
@@ -1302,7 +1307,7 @@ ul.start li span{
     font-size: 2.2em;
     color: #fff;
     padding: 0.3em 0 0.2em;
-    font-family: 'Gochi Hand', cursive;
+    font-family: Gotham, cursive;
     font-weight: 700;
 }
 .captn p {
