@@ -318,10 +318,10 @@ i.glyphicon.glyphicon-menu-hamburger {
     padding: 0em 0 4em;
 }
 .content-left h3{
-	font-size:3em;
-	/*color: #005238;*/
-   font-family: Gotham, cursive;
-   font-weight:700;
+	font-size:2em;
+    color: whitesmoke;
+    font-family: Gotham;
+    margin-top: 1em;
     text-shadow: 4px 1px 6px rgb(0, 0, 0);
 }
 .content-left span{
@@ -2093,7 +2093,20 @@ td.add-check a {
     width: 100% !important;
     z-index: 300;
 }
+
 .logo-home {
-    margin-bottom: 1em;
-    margin-left: 33%;
+    margin-bottom: 3em;
+    margin-left: 5%;
+    max-width: 90%;
 }
+
+@media screen and (min-width: 1000px) {
+    .logo-home {
+        margin-bottom: 1em;
+        margin-left: 33%;
+    }
+}
+.nav-item {
+    list-style-type: none !important;
+}
+

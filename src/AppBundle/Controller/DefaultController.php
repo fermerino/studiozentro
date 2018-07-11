@@ -82,7 +82,7 @@ class DefaultController extends Controller
      */
     public function reservaAction(Request $request)
     {
-        return $this->render(':custom:reserva.html.twig');
+        return $this->render(':custom:contacto.html.twig');
     }
 
     /**
