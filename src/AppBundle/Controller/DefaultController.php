@@ -28,14 +28,6 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/encimeras", name="encimeras")
-     */
-    public function cartaAction(Request $request)
-    {
-        return $this->render(':custom:carta.html.twig');
-    }
-
-    /**
      * @Route("/promociones", name="promociones")
      */
     public function promocionesAction(Request $request)
@@ -86,20 +78,33 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/presupuestos", name="presupuestos")
+     * @Route("/electrodomesticos", name="electrodomesticos")
      */
-    public function presupuestosAction(Request $request)
-    {
-        return $this->render(':custom:reserva.html.twig');
+    public function sendMail(Request $request) {
+        /** @var Usuario $cliente */
+        $cliente = $pedido->getCliente();
+        /** @var Usuario $empleado*/
+        $empleado= $pedido->getEmpleado();
+
+        $from    = $this->container->getParameter('email_noreply');
+        $to      = $cliente->getEmail();
+        $cc      = $this->getInteresados();
+        if ($pedido->getEmpleado()) $cc[] = $pedido->getEmpleado()->getEmail();
+
+        /** @var Swift_Message $message */
+        $message = Swift_Message::newInstance()
+            ->setSubject('[GoldPark]: Hay cambios en su reserva')
+            ->setFrom($from)
+            ->setTo($to)
+            ->setCc($cc)
+            ->setBody(
+                $this->renderView(
+                    ':Emails:cambioEstado.html.twig',
+                    ['pedido' => $pedido, 'cliente' => $cliente]
+                ),
+                'text/html'
+            )
+        ;
+        $this->get('mailer')->send($message);
     }
-//
-//    /**
-//     * @Route("/{recurso}", name="404", requirements={
-//     *     "recurso" = "(!reserva|!quienes-somos)$"
-//     * })
-//     */
-//    public function notFoundAction(Request $request, $recurso)
-//    {
-//        return  $this->render(':exception:error404.html.twig');
-//    }
 }

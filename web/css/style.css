@@ -524,7 +524,7 @@ ul.grid-news li b {
 /*--footer--*/
 .footer {
     background-color: #232222;
-    padding: 6em 0;
+    padding: 1em;
 }
 ul.in li {
     display:inline-block;
@@ -1562,6 +1562,9 @@ h1.grid2 {
 @media(max-width:767px){
 .banner h4 {
     font-size: 2em;
+}
+h3 {
+    padding-top: 1em;
 }
 .banner {
     margin-top: 4em;
