@@ -1568,7 +1568,7 @@ h1.grid2 {
 }
 .header {
     min-height: 485px;
-	padding-top: 0.5em;
+	padding-top: 3.5em;
 }
 .content-top-top {
     padding: 3em 0;
@@ -1823,7 +1823,8 @@ h4.grid2 {
 }
 .header {
     min-height: 258px;
-	padding-top: 0.5em;
+	padding-top: 9.5em;
+    padding-bottom: 2em;
 }
 .content-left h3, .services-left h3, .menu-left h3, .events-left h3{
     font-size: 2em;

@@ -84,6 +84,9 @@ body {
     background-color: transparent !important;
 }
 
+.imagen-galeria img {
+    min-height: 100%;
+}
 @media(max-width: 768px) {
     body {
         padding: 0;
