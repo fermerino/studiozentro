@@ -24,7 +24,12 @@
             <div class="clearfix"> </div>
 
         </div>
-        <p class="footer-class animated wow bounce" data-wow-duration="1000ms" data-wow-delay="500ms">&copy; {{ "now"|date("Y") }} StudioZentro. Design by  <a href="https://cowabi.com/" target="_blank">Cowabi LTD</a> </p>
+        {% if imagenes is defined %}
+            <p class="footer-class animated wow" data-wow-duration="1000ms" data-wow-delay="500ms">&copy; {{ "now"|date("Y") }} StudioZentro. Design by  <a href="https://cowabi.com/" target="_blank">Cowabi LTD</a> </p>
+        {% else %}
+            <p class="footer-class animated wow bounce" data-wow-duration="1000ms" data-wow-delay="500ms">&copy; {{ "now"|date("Y") }} StudioZentro. Design by  <a href="https://cowabi.com/" target="_blank">Cowabi LTD</a> </p>
+        {% endif %}
+
     </div>
 </div>
 <!--//footer-->
