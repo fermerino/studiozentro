@@ -155,4 +155,27 @@ body .toggle-menu li{
   color: white;
   margin-top: 1em;
   text-align: center;
+  font-family: Gotham;
+  text-transform: uppercase;
+}
+
+.text-white-div {
+    color: white;
+    font-family: Gotham;
+    text-align: justify;
+    min-height: 50%;
+}
+
+.text-white-div h1, li{
+  margin-bottom: 1em;
+}
+.text-white-div p{
+  margin-bottom: 2em;
+  margin-left: -2em;
+}
+@media(min-width:1100px){
+  .text-white-div {
+    width: 80%;
+    margin-left: 10%;
+  }
 }
