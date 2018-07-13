@@ -150,3 +150,9 @@ body .toggle-menu li{
     float: left;
     margin-left: 1em;
 }
+
+.content-top h1 {
+  color: white;
+  margin-top: 1em;
+  text-align: center;
+}

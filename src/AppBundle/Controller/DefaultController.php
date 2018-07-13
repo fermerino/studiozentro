@@ -62,7 +62,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/electrodomesticos", name="electrodomesticos")
+     * @Route("/quienes-somos", name="quienessomos")
      */
     public function quienesSomosAction(Request $request)
     {
