@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Swift_Message;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -78,33 +79,30 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/electrodomesticos", name="electrodomesticos")
+     * @Route("/envio-contacto", name="envio_contacto")
      */
     public function sendMail(Request $request) {
-//        /** @var Usuario $cliente */
-//        $cliente = $pedido->getCliente();
-//        /** @var Usuario $empleado*/
-//        $empleado= $pedido->getEmpleado();
-//
-//        $from    = $this->container->getParameter('email_noreply');
-//        $to      = $cliente->getEmail();
-//        $cc      = $this->getInteresados();
-//        if ($pedido->getEmpleado()) $cc[] = $pedido->getEmpleado()->getEmail();
-//
-//        /** @var Swift_Message $message */
-//        $message = Swift_Message::newInstance()
-//            ->setSubject('[GoldPark]: Hay cambios en su reserva')
-//            ->setFrom($from)
-//            ->setTo($to)
-//            ->setCc($cc)
-//            ->setBody(
-//                $this->renderView(
-//                    ':Emails:cambioEstado.html.twig',
-//                    ['pedido' => $pedido, 'cliente' => $cliente]
-//                ),
-//                'text/html'
-//            )
-//        ;
-//        $this->get('mailer')->send($message);
+        parse_str($request->getContent(), $form);
+
+        $from    = $this->container->getParameter('email_noreply');
+        $to      = $cliente->getEmail();
+        $cc      = $this->getInteresados();
+        if ($pedido->getEmpleado()) $cc[] = $pedido->getEmpleado()->getEmail();
+
+        /** @var Swift_Message $message */
+        $message = Swift_Message::newInstance()
+            ->setSubject('[StudioZentro]: Formulario de contacto')
+            ->setFrom($from)
+            ->setTo($to)
+            ->setCc($cc)
+            ->setBody(
+                $this->renderView(
+                    ':mail:contacto.html.twig',
+                    ['form' => $form]
+                ),
+                'text/html'
+            )
+        ;
+        $this->get('mailer')->send($message);
     }
 }

@@ -12,7 +12,7 @@
                     <div class="col col-6 col-sm-12">
                         <div class="card">
                             <div class="card-body">
-                                <form role="form" action="contenido/sendemail.php" method="post">
+                                <form role="form" action="envio-contacto" method="POST">
                                     <div class="form-group float-label-control">
                                         <label for="">Nombre</label>
                                         <input name="nombre" type="text" class="form-control" placeholder="Nombre" value="">
@@ -38,11 +38,11 @@
                                         <textarea  name="comentarios" class="form-control" placeholder="Qué necesitas" rows="5" value=""></textarea>
                                     </div>
                                     <div class="col align-self-center">
-                                        <input type="checkbox" name="terminos">
-                                        <a href="?contenido=condiciones-generales">Acepto los términos y condiciones.</a>
-                                        <br><br>
-                                        <div class='g-recaptcha pull-left' data-sitekey='6Ld1BSEUAAAAAEbilQ35NsK-SnQTRmx95rkdzJt8'>
-                                        </div><br>
+                                        {#<input type="checkbox" name="terminos">#}
+                                        {#<a href="?contenido=condiciones-generales">Acepto los términos y condiciones.</a>#}
+                                        {#<br><br>#}
+                                        {#<div class='g-recaptcha pull-left' data-sitekey='6Ld1BSEUAAAAAEbilQ35NsK-SnQTRmx95rkdzJt8'>#}
+                                        {#</div><br>#}
                                         <button type="submit" class="btn btn-info pull-right btn-contacto btn-lg" formnovalidate><i class="fa fa-envelope"></i> Enviar</button>
                                     </div>
                                 </form>
