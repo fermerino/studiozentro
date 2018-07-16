@@ -84,10 +84,9 @@ class DefaultController extends Controller
     public function sendMail(Request $request) {
         parse_str($request->getContent(), $form);
 
-        $from    = $this->container->getParameter('email_noreply');
-        $to      = $cliente->getEmail();
-        $cc      = $this->getInteresados();
-        if ($pedido->getEmpleado()) $cc[] = $pedido->getEmpleado()->getEmail();
+        $from    = $this->container->getParameter('mailer_user');
+        $to      = $from;
+        $cc      = 'raul@studiozentro.es;hola@cowabi.com';
 
         /** @var Swift_Message $message */
         $message = Swift_Message::newInstance()

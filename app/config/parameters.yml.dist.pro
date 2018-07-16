@@ -4,7 +4,7 @@
 parameters:
     mailer_transport: smtp
     mailer_host: 127.0.0.1
-    mailer_user: info@originalcircle.es
-    mailer_password: originalcircle
+    mailer_user: info@studiozentro.es
+    mailer_password: Si2@v4b9
     secret: 4796a29cce0c8bc93ce9d5b0e1d99b791d30c588
     path_wkhtmltopdf: /usr/local/bin/wkhtmltopdf
