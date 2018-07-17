@@ -98,9 +98,37 @@
     {% endblock %}
 </div>
 
-{% block content %}
+<div class="container-fluid mt-5 ml-5 mr-5 mb-5">
+    {% block flash %}
+        {% for msg in app.session.flashBag.get('error') %}
+            <div class="alert alert-danger alert-dismissable">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                {{ msg }}
+            </div>
+        {% endfor %}
+        {% for msg in app.session.flashBag.get('warning') %}
+            <div class="alert alert-warning alert-dismissable">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                {{ msg }}
+            </div>
+        {% endfor %}
+        {% for msg in app.session.flashBag.get('notice') %}
+            <div class="alert alert-info alert-dismissable">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                {{ msg }}
+            </div>
+        {% endfor %}
+        {% for msg in app.session.flashBag.get('success') %}
+            <div class="alert alert-success alert-dismissable">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                {{ msg }}
+            </div>
+        {% endfor %}
+    {% endblock %}
 
-{% endblock %}
+    {% block content %}{% endblock %}
+</div>
+
 
 </body>
 

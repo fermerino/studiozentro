@@ -102,6 +102,12 @@ class DefaultController extends Controller
                 'text/html'
             )
         ;
-        $this->get('mailer')->send($message);
+        if ($this->get('mailer')->send($message)) {
+            $this->addFlash('success', 'Mensaje enviado');
+        } else {
+            $this->addFlash('warning', 'Mensaje fallido');
+        }
+
+        return $this->render(':custom:contactoDone.html.twig');
     }
 }
