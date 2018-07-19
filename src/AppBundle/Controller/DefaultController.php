@@ -59,7 +59,22 @@ class DefaultController extends Controller
 
         krsort($imagenes);
 
-        return $this->render(':custom:galeria.html.twig', ['imagenes' => $imagenes, 'tipo' => $recurso]);
+        switch ($recurso){
+            case 'cocinas':
+                $title = "¡¡¡ Haz tu sueño realidad !!!";
+                break;
+            case 'electrodomesticos':
+                $title = "Nuestros proveedores son los más prestigiosos fabricantes";
+                break;
+            case 'encimeras':
+                $title = "El lugar donde realmente trabajas";
+                break;
+            default:
+                $title = "Galería de $recurso";
+                break;
+        }
+
+        return $this->render(':custom:galeria.html.twig', ['imagenes' => $imagenes, 'tipo' => $recurso, 'titleh1' => $title]);
     }
 
     /**

@@ -1,5 +1,5 @@
 {% extends ':custom:base.html.twig' %}
-{% block title %} StudioZentro - Galería de {{ tipo }}{% endblock %}
+{% block title %} StudioZentro - {{ tipo }} {% endblock %}
 {% block extra %}
     <link rel="stylesheet" href="{{ asset('css/fluid-gallery.css') }}">
     <link rel="stylesheet" href="{{ asset('css/fluidgalleryaux.min.css') }}">
@@ -12,7 +12,7 @@
                 <div class="content-top">
                     <div class="col-md-12 content-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
                         <h1>
-                            Galería de {{ tipo }}
+                            {{ titleh1 }}
                         </h1>
                     </div>
                     <div class="clearfix"> </div>
