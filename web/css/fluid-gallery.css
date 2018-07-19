@@ -26,7 +26,7 @@ body {
 }
 .imagen-galeria{
     display:block;
-    height:230px;
+    height:250px;
     line-height:230px;
     overflow:hidden;
 }
@@ -83,6 +83,21 @@ body {
     background-color: transparent !important;
 }
 
+.label-galeria {
+    width: 100%;
+    position: absolute;
+    top: 225px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-family: Gotham;
+    font-weight: 800;
+    font-size: 16px;
+    background-color: #343433;
+}
+p.nombre-imagen {
+    text-align: center;
+}
 .imagen-galeria img {
     min-height: 100%;
 }

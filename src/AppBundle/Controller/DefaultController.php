@@ -48,10 +48,15 @@ class DefaultController extends Controller
         $gestor_dir = opendir($directorio);
         while (false !== ($nombre_fichero = readdir($gestor_dir))) {
             if ($nombre_fichero === '.' || $nombre_fichero === "..") continue;
+
+            $nombre_final = ucwords(pathinfo($nombre_fichero, PATHINFO_FILENAME));
+            $nombre_final = str_replace('_', ' ', $nombre_final);
+            $nombre_final = str_replace('-', ' ', $nombre_final);
+
             $imagenes[] = [
                 filectime(pathinfo($nombre_fichero, PATHINFO_DIRNAME)) =>
                     [
-                        'nombre'   => ucwords(pathinfo($nombre_fichero, PATHINFO_FILENAME)),
+                        'nombre'   => $nombre_final,
                         'fichero'  => "images/$recurso/$nombre_fichero"
                     ]
                 ];
