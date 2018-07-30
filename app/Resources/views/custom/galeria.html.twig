@@ -28,7 +28,7 @@
                                         <img src="{{ asset(imagen.fichero) }}"  title="{{ imagen.nombre }} alt="{{ imagen.nombre }}">
                                     </a>
                                     <div class="label-galeria">
-                                        <p class="nombre-imagen">{{ imagen.nombre }}</p>
+                                        <p class="nombre-imagen">{{ imagen.nombre | capitalize}}</p>
                                     </div>
                                 </div>
                             {% endfor %}
