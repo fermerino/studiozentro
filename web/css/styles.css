@@ -142,7 +142,11 @@ body .toggle-menu li{
     font-family: 'Amatic SC', bolder;
     font-weight: 800;
   font-size: 30px;
-} 
+}
+
+.content-top h1 {
+  margin-top: 2.2em !important;
+}
 }
 
 @media (min-width: 768px) {}
