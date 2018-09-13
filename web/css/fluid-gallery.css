@@ -85,8 +85,8 @@ body {
 
 .label-galeria {
     width: 100%;
-    position: absolute;
-    top: 225px;
+    position: fixed;
+    top: 245px;
     text-align: center;
     align-items: center;
     color: white;
@@ -94,8 +94,9 @@ body {
     font-weight: 800;
     font-size: 16px;
     background-color: #343433;
+    margin: 0.1em 0em 0.2em 0em !important;
 }
-p.nombre-imagen {
+p.agen {
     text-align: center;
 }
 .imagen-galeria img {
