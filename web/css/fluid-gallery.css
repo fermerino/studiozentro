@@ -85,7 +85,7 @@ body {
 
 .label-galeria {
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 245px;
     text-align: center;
     align-items: center;
