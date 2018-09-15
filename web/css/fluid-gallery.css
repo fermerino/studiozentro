@@ -47,9 +47,9 @@ body {
 
 .tz-gallery .lightbox:before {
     position: absolute;
-    top: 10%;
+    /*top: 10%;*/
     left: 50%;
-    margin-top: -13px;
+    /*margin-top: -13px;*/
     margin-left: -13px;
     opacity: 0;
     color: #fff;
