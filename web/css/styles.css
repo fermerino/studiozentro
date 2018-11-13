@@ -177,6 +177,12 @@ body .toggle-menu li{
   margin-bottom: 2em;
   margin-left: -2em;
 }
+.title-white {
+  color: white !important;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
 @media(min-width:1100px){
   .text-white-div {
     width: 80%;
