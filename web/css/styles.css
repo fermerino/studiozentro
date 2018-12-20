@@ -184,7 +184,7 @@ body .toggle-menu li{
   text-align: center;
 }
 
-h2.text-white {
+h2.text-white, p.text-white {
   color: white !important;
   font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
   text-align: center;
