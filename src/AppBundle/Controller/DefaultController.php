@@ -60,6 +60,13 @@ class DefaultController extends Controller
                         'fichero'  => "images/$recurso/$nombre_fichero"
                     ]
                 ];
+            $imagenes_por_nombre[$nombre_final] = [
+                $nombre_final =>
+                    [
+                        'nombre'   => $nombre_final,
+                        'fichero'  => "images/$recurso/$nombre_fichero"
+                    ]
+            ];
         }
 
         krsort($imagenes);
@@ -74,8 +81,14 @@ class DefaultController extends Controller
             case 'encimeras':
                 $title = "El lugar donde realmente trabajas";
                 break;
+            case 'catalogo':
+                $title = "Catálogo Studio Zentro";
+                $imagenes = $imagenes_por_nombre;
+                array_multisort(array_keys($imagenes), SORT_NATURAL, $imagenes);
+                break;
             default:
                 $title = "Galería de $recurso";
+
                 break;
         }
 
