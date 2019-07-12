@@ -119,7 +119,7 @@ class DefaultController extends Controller
 
         $from    = $this->container->getParameter('mailer_user');
         $to      = $from;
-        $cc      = 'hola@cowabi.com'; //raul@studiozentro.es,
+        $cc      = 'raulesteban1967@gmail.com'; //raul@studiozentro.es,
 
         /** @var Swift_Message $message */
         $message = Swift_Message::newInstance()
