@@ -105,6 +105,14 @@ class DefaultController extends Controller
     }
 
     /**
+     * @Route("/promociones", name="promociones")
+     */
+    public function promosActions(Request $request)
+    {
+        return $this->render(':custom:promociones.html.twig');
+    }
+
+    /**
      * @Route("/reformas", name="reformas")
      */
     public function reservaAction(Request $request)

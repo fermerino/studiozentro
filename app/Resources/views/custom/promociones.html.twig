@@ -1,40 +1,244 @@
 {% extends ':custom:base.html.twig' %}
+{% block title %}StudioZentro - Promociones  de cocinas completas instaladas en Madrid{% endblock %}
+{% block descripcion %}Promociones 2019 Madrid en cocinas completamente instaladas en tu casa desde 1490 euros {% endblock %}
+{% block extra %}
+    /*
+    Side Navigation Menu V2, RWD
+    ===================
+    License:
+    https://goo.gl/EaUPrt
+    ===================
+    Author: @PableraShow
 
+    */
+
+    @charset "UTF-8";
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+    body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.42em;
+    color:#A7A1AE;
+    background-color:#1F2739;
+    }
+
+    h1 {
+    font-size:3em;
+    font-weight: 300;
+    line-height:1em;
+    text-align: center;
+    color: #4DC3FA;
+    }
+
+    h2 {
+    font-size:1em;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    line-height:1em;
+    padding-bottom: 2em;
+    color: #FB667A;
+    }
+
+    h2 a {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FB667A;
+    text-decoration: none;
+    }
+
+    .blue { color: #185875; }
+    .yellow { color: #FFF842; }
+
+    .container th h1 {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    color: #185875;
+    }
+
+    .container td {
+    font-weight: normal;
+    font-size: 1em;
+    -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+    -moz-box-shadow: 0 2px 2px -2px #0E1119;
+    box-shadow: 0 2px 2px -2px #0E1119;
+    }
+
+    .container {
+    text-align: left;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+    padding: 0 0 8em 0;
+    }
+
+    .container td, .container th {
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left:2%;
+    }
+
+    /* Background-color of the odd rows */
+    .container tr:nth-child(odd) {
+    background-color: #323C50;
+    }
+
+    /* Background-color of the even rows */
+    .container tr:nth-child(even) {
+    background-color: #2C3446;
+    }
+
+    .container th {
+    background-color: #1F2739;
+    }
+    .container tr:hover {
+    background-color: #464A52;
+    -webkit-box-shadow: 0 6px 6px -6px #0E1119;
+    -moz-box-shadow: 0 6px 6px -6px #0E1119;
+    box-shadow: 0 6px 6px -6px #0E1119;
+    }
+
+    .container td:hover {
+    background-color: #FFF842;
+    color: #403E10;
+    font-weight: bold;
+
+    box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+    }
+
+    @media (max-width: 800px) {
+    .container td:nth-child(4),
+    .container th:nth-child(4) { display: none; }
+    }
+{% endblock %}
 {% block content %}
     <div class="content-top-top">
         <div class="container">
-            <div class="content-top">
-                <div class="col-md-12 content-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
-                    <h3 class="rojo">¡¡ NO PIERDAS DE VISTA NUESTRAS PROMOCIONES Y OFERTAS !!</h3>
+            <div class="content-top text-white-div">
+                <div class="col-md-12 content-left animated wow fadeInLeft mb-3" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    <h1>Promociones cocinas instaladas 2019 Madrid</h1>
                 </div>
-                <div class="clearfix"> </div><br>
-                <div class="col-md-12 content-right animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
-                    <h3 class="letra-carta">Síguenos en Twitter y dale a "Me gusta" en Facebook para enterarte de nuevos eventos, ofertas y promociones.</h3>
-                    <div class="clearfix"> </div><br>
 
-                    <div class="col-md-6 content-right animated wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="700ms">
-                        <a href="https://www.facebook.com/Restaulandia?ref=hl" class="btn btn-default center-block" role="button">Me gusta en Facebook</a>
-                    </div>
+                <p class="animated wow fadeInLeft mb-3" data-wow-duration="1000ms" data-wow-delay="500ms">
+                    CON MAS DE 25 AÑOS DE EXPERIENCIA STUDIO ZENTRO ES UNA EMPRESA DEDICADA
+                    EXCLUSIVAMENTE AL DESARROLLO DE COCINAS, DISEÑADAS POR EXPERTOS
+                    PROFESIONALES:
+                </p>
 
-                    <div class="col-md-6 content-left animated wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="1200ms">
-                        <a href="https://twitter.com/Restaulandia" class="btn btn-default center-block" role="button">Siguenos en Twitter</a>
-                    </div>
-                </div>
+                <h1><span class="blue">&lt;</span>Table<span class="blue">&gt;</span> <span class="yellow">Responsive<span></h1>
+                <h2>Created with love by <a href="http://pablogarciafernandez.com" target="_blank">Pablo García Fernández</a></h2>
+
+                <table class="container">
+                    <thead>
+                    <tr>
+                        <th>
+                            <img src="{{ asset('images/promos/excelent.JPG') }}"  title="Excelence" alt="Excelence">
+                            <h1>Pack Excellent</h1></th>
+                        <th>
+                            <img src="{{ asset('images/promos/premium.JPG') }}"  title="premium" alt="premium">
+                            <h1>Pack Premium</h1>
+                        </th>
+                        <th>
+                            <img src="{{ asset('images/promos/luxury.JPG') }}"  title="luxury" alt="luxury">
+                            <h1>Pack Luxury</h1>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Desde 1490€ a 2490€</td>
+                        <td>Desde 2490€ a 3490€</td>
+                        <td>Desde 3490€</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><b>MUEBLES DE COCINA</b></td>
+                        <td><b>MUEBLES DE COCINA</b></td>
+                        <td><b>MUEBLES DE COCINA</b></td>
+                    </tr>
+                    <tr>
+                        <td>Laminado</td>
+                        <td>Laminado & Polinaminado</td>
+                        <td>Lacado</td>
+                    </tr>
+                    <tr>
+                        <td>DM</td>
+                        <td>DM & Polinaminado</td>
+                        <td>Madera</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><b>ENCIMERAS</b></td>
+                        <td><b>ENCIMERAS</b></td>
+                        <td><b>ENCIMERAS</b></td>
+                    </tr>
+                    <tr>
+                        <td>Silestone</td>
+                        <td>Silestone</td>
+                        <td>Silestone</td>
+                    </tr>
+                    <tr>
+                        <td>Granito nacional</td>
+                        <td>Granito Importado</td>
+                        <td>Porcelanico NEOLITH</td>
+                    </tr>
+                    <tr>
+                        <td>Laminado</td>
+                        <td>Porcelanico NEOLITH</td>
+                        <td>Dekton</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><b>SISTEMA APERTURA</b></td>
+                        <td><b>SISTEMA APERTURA</b></td>
+                        <td><b>SISTEMA APERTURA</b></td>
+                    </tr>
+                    <tr>
+                        <td>Tirador</td>
+                        <td>Tirador</td>
+                        <td>Tirador</td>
+                    </tr>
+                    <tr>
+                        <td>Uñero</td>
+                        <td>Uñero</td>
+                        <td>Uñero</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Gola</td>
+                        <td>Gola</td>
+                    </tr>
+                    <tr>
+                        <td><small>Montaje,transporte e IVA incluidos!!</small></td>
+                        <td><small>Montaje,transporte e IVA incluidos!!</small></td>
+                        <td><small>Montaje,transporte e IVA incluidos!!</small></td>
+                    </tr>
+                    </tbody>
+                </table>
                 <div class="clearfix"> </div>
             </div>
         </div>
     </div>
-    <!--services-->
-    <div class="services">
-        <div class="container">
-            <div class="services-top">
-                <div class="col-md-12 animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
-                    <h2 class="amarillo sombra kid-font2">Sube las fotografías y vídeos que hagas de tus hijos en Restaulandia a nuestra página de Facebook y participa en un gran concurso a la fotografía y el vídeo más divertido.</h2>
-                    <img class="camara" src="{{ asset('images/camara.png') }}" title="Eventos personalizados" alt="Eventos personalizados en el restaulandia">
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-        </div>
-    </div>
-
 {% endblock %}
+
