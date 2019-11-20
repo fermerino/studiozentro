@@ -73,6 +73,10 @@ class DefaultController extends Controller
         krsort($imagenes);
 
         switch ($recurso){
+            case 'cocinas_instaladas':
+                $title = "Cocinas instaladas";
+                array_multisort(array_keys($imagenes), SORT_NATURAL, $imagenes);
+                break;
             case 'cocinas':
                 $title = "¡¡¡ Haz tu sueño realidad !!!";
                 break;
