@@ -23,7 +23,7 @@
                                     </div>
                                     <div class="form-group float-label-control">
                                         <label for="email">Email</label>
-                                        <input name="email" type="email" class="form-control" placeholder="Email" value="">
+                                        <input name="email" type="email" class="form-control" placeholder="Email" value="" required>
                                     </div>
                                     <div class="form-group float-label-control">
                                         <label for="codigo">Código postal</label>
@@ -31,11 +31,11 @@
                                     </div>
                                     <div class="form-group float-label-control">
                                         <label for="telefono">Teléfono</label>
-                                        <input name="telefono" type="text" class="form-control" placeholder="Teléfono" value="">
+                                        <input name="telefono" type="text" class="form-control" placeholder="Teléfono" value="" required>
                                     </div>
                                     <div class="form-group float-label-control">
                                         <label for="comentarios">Qué necesitas</label>
-                                        <textarea  name="comentarios" class="form-control" placeholder="Qué necesitas" rows="5" value=""></textarea>
+                                        <textarea  name="comentarios" class="form-control" placeholder="Qué necesitas" rows="5" value="" required></textarea>
                                     </div>
                                     <div class="col align-self-center">
                                         {#<input type="checkbox" name="terminos">#}
@@ -43,7 +43,7 @@
                                         {#<br><br>#}
                                         {#<div class='g-recaptcha pull-left' data-sitekey='6Ld1BSEUAAAAAEbilQ35NsK-SnQTRmx95rkdzJt8'>#}
                                         {#</div><br>#}
-                                        <button type="submit" class="btn btn-info pull-right btn-contacto btn-lg" formnovalidate><i class="fa fa-envelope"></i> Enviar</button>
+                                        <button type="submit" class="btn btn-info pull-right btn-contacto btn-lg"><i class="fa fa-envelope"></i> Enviar</button>
                                     </div>
                                 </form>
                             </div>
