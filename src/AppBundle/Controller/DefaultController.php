@@ -79,6 +79,8 @@ class DefaultController extends Controller
                 break;
             case 'cocinas':
                 $title = "¡¡¡ Haz tu sueño realidad !!!";
+                $imagenes = $imagenes_por_nombre;
+                array_multisort(array_keys($imagenes), SORT_NATURAL, $imagenes);
                 break;
             case 'electrodomesticos':
                 $title = "Nuestros proveedores son los más prestigiosos fabricantes";
