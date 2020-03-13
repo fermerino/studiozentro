@@ -136,6 +136,11 @@ class DefaultController extends Controller
         $to      = $from;
         $cc      = array('raulesteban1967@gmail.com', 'fer.merinol@gmail.com'); //raul@studiozentro.es,
 
+        if (empty($form['comentarios']) || empty($form['email']) || empty($form['nombre'])) {
+            $this->addFlash('warning', 'Por favor, complete su email, comentario y nombre');
+            $this->render(':custom:contacto.html.twig');
+        }
+
         /** @var Swift_Message $message */
         $message = Swift_Message::newInstance()
             ->setSubject('[StudioZentro]: Formulario de contacto')
