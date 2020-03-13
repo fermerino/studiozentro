@@ -134,13 +134,13 @@ class DefaultController extends Controller
 
         $from    = $this->container->getParameter('mailer_user');
         $to      = $from;
-        $cc      = 'raulesteban1967@gmail.com;fer.merinol@gmail.com'; //raul@studiozentro.es,
+        $cc      = array('raulesteban1967@gmail.com', 'fer.merinol@gmail.com'); //raul@studiozentro.es,
 
         /** @var Swift_Message $message */
         $message = Swift_Message::newInstance()
             ->setSubject('[StudioZentro]: Formulario de contacto')
             ->setFrom($from)
-            ->setTo($to)
+            ->setTo('fer.merinol@gmail.com') //$to
             ->setCc($cc)
             ->setBody(
                 $this->renderView(
