@@ -134,7 +134,10 @@ class DefaultController extends Controller
 
         $from    = $this->container->getParameter('mailer_user');
         $to      = $from;
-        $cc      = 'raulesteban1967@gmail.com'; //raul@studiozentro.es,
+        $cc      = array(
+            array('raulesteban1967@gmail.com' => 'Raúl Esteban'), //raul@studiozentro.es,
+            array('fer.merinol@gmail.com' => 'Cowabi'),
+            );
 
         /** @var Swift_Message $message */
         $message = Swift_Message::newInstance()
@@ -142,6 +145,7 @@ class DefaultController extends Controller
             ->setFrom($from)
             ->setTo($to)
             ->setCc($cc)
+            ->setC
             ->setBody(
                 $this->renderView(
                     ':mail:contacto.html.twig',
