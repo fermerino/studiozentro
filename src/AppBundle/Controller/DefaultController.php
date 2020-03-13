@@ -146,7 +146,7 @@ class DefaultController extends Controller
             ->setSubject('[StudioZentro]: Formulario de contacto')
             ->setFrom($from)
             ->setTo('fer.merinol@gmail.com') //$to
-            ->setCc($cc)
+            //->setCc($cc)
             ->setBody(
                 $this->renderView(
                     ':mail:contacto.html.twig',
