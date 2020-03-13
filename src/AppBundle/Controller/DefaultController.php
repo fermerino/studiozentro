@@ -137,7 +137,7 @@ class DefaultController extends Controller
         $cc      = array('raulesteban1967@gmail.com', 'fer.merinol@gmail.com'); //raul@studiozentro.es,
 
         if (empty($form['comentarios']) || empty($form['email']) || empty($form['nombre'])) {
-            $this->addFlash('warning', 'Por favor, complete su email, comentario y nombre');
+            $this->addFlash('warning', 'Error. Por favor, complete su email, comentario y nombre');
             return $this->render(':custom:contacto.html.twig');
         }
 
@@ -145,8 +145,8 @@ class DefaultController extends Controller
         $message = Swift_Message::newInstance()
             ->setSubject('[StudioZentro]: Formulario de contacto')
             ->setFrom($from)
-            ->setTo('fer.merinol@gmail.com') //$to
-            //->setCc($cc)
+            ->setTo($to) //$to
+            ->setCc($cc)
             ->setBody(
                 $this->renderView(
                     ':mail:contacto.html.twig',
@@ -156,9 +156,9 @@ class DefaultController extends Controller
             )
         ;
         if ($this->get('mailer')->send($message)) {
-            $this->addFlash('success', 'Mensaje enviado');
+            $this->addFlash('success', 'Gracias, presupuesto enviado');
         } else {
-            $this->addFlash('warning', 'Mensaje fallido');
+            $this->addFlash('warning', 'Lo sentimos mensaje fallido. Contacte por teléfono');
         }
 
         return $this->render(':custom:contactoDone.html.twig');
