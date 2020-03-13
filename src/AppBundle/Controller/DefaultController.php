@@ -138,7 +138,7 @@ class DefaultController extends Controller
 
         if (empty($form['comentarios']) || empty($form['email']) || empty($form['nombre'])) {
             $this->addFlash('warning', 'Por favor, complete su email, comentario y nombre');
-            $this->render(':custom:contacto.html.twig');
+            return $this->render(':custom:contacto.html.twig');
         }
 
         /** @var Swift_Message $message */

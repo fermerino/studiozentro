@@ -97,7 +97,11 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 </head>
 <body class="body">
-
+{% for flash_message in app.session.flashbag.get('notice') %}
+    <div class="flash-notice">
+        {{ flash_message }}
+    </div>
+{% endfor %}
 <div class="{% block header %} header-basica{% endblock %}">
     {% block topnav %}
         {% include ':custom:topnav.html.twig' %}
