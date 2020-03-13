@@ -202,3 +202,12 @@ h2.text-white, p.text-white {
     margin-left: 10%;
   }
 }
+.alert {
+  position: absolute;
+  border-color: #faebcc !important;
+  top: 8em;
+  color: red;
+  text-align: center;
+  width: 100%;
+  font-size: 2em;
+}
