@@ -10,8 +10,21 @@
     <!--content-->
     <div class="content" id="content-down">
         <div class="content-top-top">
+            {% if "now"|date("Y-m-d") < '2020-08-01' %}
+                <div class="container">
+                    <div class="content-mid aviso">
+
+                        <p style="font-size: 1.2em">{{ 'Por fin abrimos después de un duro confinamiento por el covid-19' | upper }}</p>
+                        <p style="margin: 1em;">Pide tu cita previa por teléfono, correo electrónico o a través de las redes sociales, el horario será el habitual.</p>
+                        <br><br>
+                        <p>¡Gracias por estar ahí!</p>
+                    </div>
+                </div>
+            {% endif %}
+
             <div class="container">
                 <div class="content-mid">
+
                     <div class="col-md-4 food-grid animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
                         <div class=" hover-fold">
                             <h4>Cocinas</h4>
