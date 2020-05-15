@@ -212,21 +212,21 @@ h2.text-white, p.text-white {
   font-size: 2em;
 }
 
-.content-mid.aviso {
-  margin: 0 auto;
-  color: wheat;
-  font-size: 1em;
-  font-family: Gotham;
-  width: 70%;
-  margin-bottom: 3em;
-  margin-top: -1em;
+/*.content-mid.aviso {*/
+/*  margin: 0 auto;*/
+/*  color: wheat;*/
+/*  font-size: 1em;*/
+/*  font-family: Gotham;*/
+/*  width: 70%;*/
+/*  margin-bottom: 3em;*/
+/*  margin-top: -1em;*/
 
-  padding: 1em;
-  background: #4e4e4d;
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 2px #fff inset,
-  -1px -1px 2px #fff inset;
-  border-radius: 3px/6px;
+/*  padding: 1em;*/
+/*  background: #4e4e4d;*/
+/*  border: 1px solid #ccc;*/
+/*  box-shadow: 1px 1px 2px #fff inset,*/
+/*  -1px -1px 2px #fff inset;*/
+/*  border-radius: 3px/6px;*/
 
-  -webkit-box-shadow: rgba(0, 0, 0,.60) 8px 8px 4px;
-}
+/*  -webkit-box-shadow: rgba(0, 0, 0,.60) 8px 8px 4px;*/
+/*}*/

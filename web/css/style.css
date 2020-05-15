@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     src: url(../fonts/Gotham-Light.woff) format("woff");
 }
 body{
-	background:#fff;	
+	background:#fff;
 	font-family: Gotham;
 }
 body a{
@@ -136,7 +136,7 @@ iframe{
 	margin: 0;
 }
 h1,h2,h3,h4,h5,h6,label,p{
-	margin:0;	
+	margin:0;
 }
 .logo{
 	float:left;
@@ -186,7 +186,7 @@ i.glyphicon.glyphicon-menu-hamburger {
 /*--banner--*/
 .banner{
 	text-align:center;
-	margin-top: 10em;	
+	margin-top: 10em;
 }
 .banner h4 {
     color:#fff;
@@ -203,6 +203,7 @@ i.glyphicon.glyphicon-menu-hamburger {
     font-size: 1.2em;
     color: #fff;
     text-transform: uppercase;
+    padding-top: 2em;
 }
 .banner label {
     width: 78px;
@@ -550,11 +551,11 @@ ul.in li a:hover {
 }
 .footer-top p{
 	font-size:1.2em;
-	color:#fff;	
+	color:#fff;
 }
 .footer-top p a{
 	text-decoration:none;
-	color:#fff;	
+	color:#fff;
 }
 p.footer-class{
     font-size: 1.2em;
@@ -562,10 +563,10 @@ p.footer-class{
 }
 p.footer-class a{
 	text-decoration:none;
-	color:#97824B;	
+	color:#97824B;
 }
 p.footer-class a:hover{
-	color:#fff;	
+	color:#fff;
 }
 .footer-bottom h2{
 	font-size: 2em;
@@ -689,10 +690,10 @@ p.footer-class a:hover{
     background-color:#ECECEC;
 }
 .events-bottom2 h3{
-    font-size: 2em; 
+    font-size: 2em;
     color: #005238;
     font-family: Gotham, cursive;
-    font-weight: 700;	
+    font-weight: 700;
 }
 .events-bottom2 label {
     display: block;
@@ -877,7 +878,7 @@ p.msg-para{
 span.date-in{
 	float:left;
 	color:#7C7C7C;
-	font-size:1em;	
+	font-size:1em;
 }
 i.glyphicon.glyphicon-calendar {
   font-size: 14px;
@@ -887,7 +888,7 @@ a.comments{
 	float:right;
 	color:#7C7C7C;
 	text-decoration:none;
-	font-size:1em;	
+	font-size:1em;
 }
 i.glyphicon.glyphicon-comment {
   font-size: 14px;
@@ -1007,7 +1008,7 @@ ul.grid-blog li{
 ul.grid-blog li a, ul.grid-blog li span{
 	text-decoration: none;
 	font-size: 1em;
-	color: #8A8A8A;	
+	color: #8A8A8A;
 	display: inline-block;
 	margin: 0 1em 0 0;
 }
@@ -1016,7 +1017,7 @@ ul.grid-blog li a:hover{
 }
 ul.grid-blog li i{
 	margin: 0 5px 0 0;
-	color:#97824B;	
+	color:#97824B;
 }
 ul.grid-blog {
 	 padding: 1.5em 0;
@@ -1055,7 +1056,7 @@ ul.grid-blog {
 }
 .single-grid textarea{
 	resize:none;
-	height: 185px;	
+	height: 185px;
 }
 .single-grid {
     width: 60%;
@@ -1155,10 +1156,10 @@ p.reply a i{
 	background: none;
 	width: 87%;
 	border: none;
-	color:#fff;	
+	color:#fff;
 	font-size: 1.2em;
 }
-.search input[type="submit"] {	
+.search input[type="submit"] {
 	width: 30px;
 	height: 30px;
 	background: url(../images/search.png)no-repeat 0px 10px ;
@@ -1175,7 +1176,7 @@ p.reply a i{
 }
 .popular li a{
 	color:#353535;
-	font-size:1.15em;	
+	font-size:1.15em;
 }
 .popular li i{
 	width: 17px;
@@ -1610,7 +1611,7 @@ h3 {
 }
 .logo h1 {
     font-size: 3.5em;
-}	
+}
 .content-left h3 ,.services-left h3,.menu-left h3,.events-left h3{
     font-size: 2.5em;
 }
@@ -1758,7 +1759,7 @@ ul.in li a {
 }
 /*--typo--*/
 .page-header h3 {
-  font-size: 2em; 
+  font-size: 2em;
 }
 button.btn.btn-lg {
   font-size: 1em;
@@ -1865,7 +1866,7 @@ h4.grid2 {
 }
 .services-top {
     padding: 0em 0 1em;
-}	
+}
 .service-bottom {
     margin-top: 2em;
     padding: 0;
@@ -2001,7 +2002,7 @@ ul.grid-blog {
     width: 90%;
 }
 .single-grid input[type="submit"] {
-    font-size: 1em;	
+    font-size: 1em;
 }
 .contact-para input[type="submit"] {
     font-size: 1em;
