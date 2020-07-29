@@ -48,7 +48,7 @@ class DefaultController extends Controller
         $gestor_dir = opendir($directorio);
         while (false !== ($nombre_fichero = readdir($gestor_dir))) {
             if ($nombre_fichero === '.' || $nombre_fichero === "..") continue;
-
+            if ($nombre_fichero === 'proyecto_trescantos') continue;
 
             $nombre_final = ucwords(pathinfo($nombre_fichero, PATHINFO_FILENAME));
             $nombre_final = str_replace('_', ' ', $nombre_final);
@@ -150,6 +150,8 @@ class DefaultController extends Controller
 //        break;
       case 'proyecto_trescantos':
         $title = "Galería de proyecto en Tres Cantos";
+        $imagenes = $imagenes_por_nombre;
+        array_multisort(array_keys($imagenes), SORT_NATURAL, $imagenes);
         break;
 
       default:
