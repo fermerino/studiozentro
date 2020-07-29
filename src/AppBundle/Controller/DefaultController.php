@@ -102,6 +102,65 @@ class DefaultController extends Controller
         return $this->render(':custom:galeria.html.twig', ['imagenes' => $imagenes, 'tipo' => $recurso, 'titleh1' => $title]);
     }
 
+  /**
+   * @Route("/galeria/{recurso}/{subrecurso}", name="subgaleria")
+   * @param Request $request
+   * @param $recurso
+   * @return \Symfony\Component\HttpFoundation\Response
+   */
+  public function subGaleriaAction(Request $request, $recurso = "cocinas_instaladas", $subrecurso = "proyecto_trescantos")
+  {
+    $directorio = "images/$recurso/$subrecurso";
+    $gestor_dir = opendir($directorio);
+    while (false !== ($nombre_fichero = readdir($gestor_dir))) {
+      if ($nombre_fichero === '.' || $nombre_fichero === "..") continue;
+
+
+      $nombre_final = ucwords(pathinfo($nombre_fichero, PATHINFO_FILENAME));
+      $nombre_final = str_replace('_', ' ', $nombre_final);
+      $nombre_final = str_replace('-', ' ', $nombre_final);
+
+      $imagenes[] = [
+        filectime(pathinfo($nombre_fichero, PATHINFO_DIRNAME)) =>
+          [
+            'nombre'   => $nombre_final,
+            'fichero'  => "images/$recurso/$subrecurso/$nombre_fichero"
+          ]
+      ];
+      $imagenes_por_nombre[$nombre_final] = [
+        $nombre_final =>
+          [
+            'nombre'   => $nombre_final,
+            'fichero'  => "images/$recurso/$subrecurso/$nombre_fichero"
+          ]
+      ];
+    }
+
+    krsort($imagenes);
+
+    switch ($subrecurso){
+//      case 'cocinas_instaladas':
+//        $title = "Cocinas instaladas";
+//        array_multisort(array_keys($imagenes), SORT_NATURAL, $imagenes);
+//        break;
+//      case 'cocinas':
+//        $title = "¡¡¡ Haz tu sueño realidad !!!";
+//        $imagenes = $imagenes_por_nombre;
+//        array_multisort(array_keys($imagenes), SORT_NATURAL, $imagenes);
+//        break;
+      case 'proyecto_trescantos':
+        $title = "Galería de proyecto en Tres Cantos";
+        break;
+
+      default:
+        $title = "Galería de $subrecurso";
+
+        break;
+    }
+
+    return $this->render(':custom:galeria.html.twig', ['imagenes' => $imagenes, 'tipo' => $recurso, 'titleh1' => $title]);
+  }
+
     /**
      * @Route("/quienes-somos", name="quienessomos")
      */
