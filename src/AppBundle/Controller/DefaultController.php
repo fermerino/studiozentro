@@ -160,7 +160,7 @@ class DefaultController extends Controller
         break;
     }
 
-    return $this->render(':custom:galeria.html.twig', ['imagenes' => $imagenes, 'tipo' => $recurso, 'titleh1' => $title]);
+    return $this->render(':custom:galeria.html.twig', ['imagenes' => $imagenes, 'tipo' => $subrecurso, 'titleh1' => $title]);
   }
 
     /**
