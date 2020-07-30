@@ -48,7 +48,7 @@ class DefaultController extends Controller
         $gestor_dir = opendir($directorio);
         while (false !== ($nombre_fichero = readdir($gestor_dir))) {
             if ($nombre_fichero === '.' || $nombre_fichero === "..") continue;
-            if (strpos($nombre_fichero, 'proyecto')) continue;
+            if (strpos($nombre_fichero, 'proyecto') !== false) continue;
 
             $nombre_final = ucwords(pathinfo($nombre_fichero, PATHINFO_FILENAME));
             $nombre_final = str_replace('_', ' ', $nombre_final);
