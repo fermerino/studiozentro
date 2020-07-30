@@ -65,6 +65,30 @@
                         <h2 class="title-white">Catálogo del <a href="/galeria/cocinas_instaladas/proyecto_pozuelo">proyecto en Pozuelo</a></h2>
                     {% endif %}
 
+                    {% if tipo == 'cocinas' %}
+                        <h2 class="title-white">HERRAJES HETTICH.</h2>
+
+                        <div class="center-block">
+                            <video width="100%" autoplay muted loop>
+                                <source src="{{ asset('video/hetich.mp4') }}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <iframe width="100%" src="https://www.youtube.com/embed/u1PTK45bnAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    {% endif %}
+
+                    {% if tipo == 'proyecto_barajas' %}
+                        <h2 class="title-white">Video Cocina</h2>
+
+                        <div class="center-block">
+                            <video width="100%" autoplay muted loop>
+                                <source src="{{ asset('video/cocinabarajas.mp4') }}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    {% endif %}
+
 
                 </div>
 

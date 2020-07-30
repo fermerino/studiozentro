@@ -114,7 +114,7 @@ class DefaultController extends Controller
     $gestor_dir = opendir($directorio);
     while (false !== ($nombre_fichero = readdir($gestor_dir))) {
       if ($nombre_fichero === '.' || $nombre_fichero === "..") continue;
-
+      if (strpos($nombre_fichero, 'video') !== false) continue;
 
       $nombre_final = ucwords(pathinfo($nombre_fichero, PATHINFO_FILENAME));
       $nombre_final = str_replace('_', ' ', $nombre_final);
@@ -155,8 +155,7 @@ class DefaultController extends Controller
         break;
 
       default:
-        $subrecurso = ucwords(str_replace('_', ' ', $subrecurso));
-        $title = "Galería del proyecto en ";
+        $title = "Galería del proyecto en " . ucwords(str_replace('_', ' ', $subrecurso));
         $imagenes = $imagenes_por_nombre;
         array_multisort(array_keys($imagenes), SORT_NATURAL, $imagenes);
 
