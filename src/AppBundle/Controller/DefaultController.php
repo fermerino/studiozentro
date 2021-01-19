@@ -197,7 +197,7 @@ class DefaultController extends Controller
 
         $from    = $this->container->getParameter('mailer_user');
         $to      = $from;
-        $cc      = array('raulesteban1967@gmail.com', 'fer.merinol@gmail.com'); //raul@studiozentro.es,
+        $cc      = array('raulesteban1967@gmail.com', 'fer.merinol@gmail.com', 'raul@studiozentro.es'); //raul@studiozentro.es,
 
         if (empty($form['comentarios']) || empty($form['email']) || empty($form['nombre'])) {
             $this->addFlash('warning', 'Error. Por favor, complete su email, comentario y nombre');
