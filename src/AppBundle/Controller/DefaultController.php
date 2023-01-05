@@ -93,6 +93,10 @@ class DefaultController extends Controller
                 $imagenes = $imagenes_por_nombre;
                 array_multisort(array_keys($imagenes), SORT_NATURAL, $imagenes);
                 break;
+            case 'colecciones':
+                $title = "Colecciones";
+                $imagenes = array();
+                break;
             default:
                 $title = "Galería de $recurso";
 
