@@ -103,33 +103,30 @@
 
                 </div>
 
+                <div class="container gallery-container">
+                    <div class="tz-gallery">
+                        <div class="row">
+                            {% for imagend in imagenes %}
+                            {% for imagen in imagend %}
+                            {% if tipo == 'catalogo' %}
+                            <div class="col-sm-6 col-md-6 imagen-galeria">
+                                {% else %}
+                                <div class="col-sm-6 col-md-4 imagen-galeria">
+                                    {% endif %}
 
-                {% if tipo !== 'colecciones' %}
-                    <div class="container gallery-container">
-                        <div class="tz-gallery">
-                            <div class="row">
-                                {% for imagend in imagenes %}
-                                {% for imagen in imagend %}
-                                {% if tipo == 'catalogo' %}
-                                <div class="col-sm-6 col-md-6 imagen-galeria">
-                                    {% else %}
-                                    <div class="col-sm-6 col-md-4 imagen-galeria">
-                                        {% endif %}
-
-                                        <a class="lightbox" href="{{ asset(imagen.fichero) }}">
-                                            <img src="{{ asset(imagen.fichero) }}"  title="{{ imagen.nombre }} alt="{{ imagen.nombre }}">
-                                        </a>
-                                        <div class="label-galeria">
-                                            <p class="nombre-imagen">{{ imagen.nombre | title}}</p>
-                                        </div>
+                                    <a class="lightbox" href="{{ asset(imagen.fichero) }}">
+                                        <img src="{{ asset(imagen.fichero) }}"  title="{{ imagen.nombre }} alt="{{ imagen.nombre }}">
+                                    </a>
+                                    <div class="label-galeria">
+                                        <p class="nombre-imagen">{{ imagen.nombre | title}}</p>
                                     </div>
-                                    {% endfor %}
-                                    {% endfor %}
                                 </div>
+                                {% endfor %}
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
-                {% endif %}
+                </div>
         </div>
     </div>
     <script src="{{ asset('js/fluidgalleryaux.min.js') }}"></script>
