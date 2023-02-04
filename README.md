@@ -17,6 +17,7 @@ A Symfony project created on Jun 21, 2018, 6:31 am.
 
 1. Comprobar que hay permisos en cache/* y var/* además de limpiar las carpetas
 
+
 ## Útiles
 1. COMPRIMIR MASIVAMENTE EN UBUNTU
    ``` mogrify  -resize 800x600 *.jpg ```
